@@ -35,34 +35,6 @@ body {
   padding: 50px 0px 0px 5%;
 }
 
-#welcome1{
-  font-size: 3em; /*16*3=48px*/
-} 
-
-#welcome2{
-  font-size: 24px;
-  vertical-align: -20px;
-}
-
-#welcome3{
-  font-size: 48px;
-}
-
-#uni1{
-  font-size: 40px;
-}
-
-#uni2{
-  font-size: 40px;
-}
-
-#uni3{
-  font-size: 48px;
-}
-
-
-
-
 
 .topNav {
   overflow: hidden;  
