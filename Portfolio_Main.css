@@ -20,7 +20,6 @@ body {
 
 .header{
   background-color: #898989;
-  height: 768px;
   padding: 128px 10%;
 }
 
@@ -28,11 +27,13 @@ body {
   color: white;
   padding: 0px 0px 0px 10%;
   font-family: Pattaya;
+  font-size: clamp(2.5em,8vw,6em);
 }
 
 .university{
-  padding: 50px 0px 0px 5%;
+  padding: 50px 0px 0px 0px;
   font-family: Kanit,Prompt,Pridi;
+  font-size: clamp(0.8em,3vw,2em);
 }
 
 
@@ -55,5 +56,3 @@ body {
   background-color: #FFFFFF;
   color: #DB5F8E;
 }
-
-
