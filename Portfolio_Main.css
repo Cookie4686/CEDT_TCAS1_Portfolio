@@ -13,6 +13,31 @@ Red(dark): #92141a
   box-sizing: border-box;
 }
 
+.navBar {
+  position: fixed;
+  overflow: hidden;
+  background-color: #DB5F8E;
+}
+
+.navBar a{
+  float: left;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 16px 18px;
+  text-decoration: none;
+  font-size: 16px;
+
+}
+
+.navBar a:hover {
+  background-color: #FFFFFF;
+  color: #DB5F8E;
+}
+
+@media only screen and (min-width: 768px){
+
+}
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -37,22 +62,4 @@ body {
 }
 
 
-.topNav {
-  overflow: hidden;  
-  background-color: #DB5F8E;
-}
 
-.topNav a{
-  float: left;
-  color: #FFFFFF;
-  text-align: center;
-  padding: 16px 18px;
-  text-decoration: none;
-  font-size: 16px;
-
-}
-
-.topNav a:hover {
-  background-color: #FFFFFF;
-  color: #DB5F8E;
-}
