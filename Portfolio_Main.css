@@ -15,23 +15,24 @@ Red(dark): #92141a
 
 .navBar {
   height: 100%;
-  width: 0px;
+  width: 0;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
   overflow-x: hidden;
-  padding-top: 60px;
   transition: 0.5s;
+  padding-top: 60px;
   background-color: #DB5F8E;
 }
 
 .navBar a{
-  color: #FFFFFF;
+  padding: 8px 8px 8px 32px;
   text-decoration: none;
   display: block;
   font-size: 16px;
   transition: 0.3s;
+  color: #FFFFFF;
 }
 
 .navBar a:hover {
@@ -39,7 +40,7 @@ Red(dark): #92141a
   color: #DB5F8E;
 }
 
-.navBar.closebtn {
+.navBar .closebtn{
   position: absolute;
   top: 0;
   right: 25px;
@@ -50,14 +51,12 @@ Red(dark): #92141a
 
 @media only screen and (min-width: 768px){
 .navBar {
-  height: 0%;
+  height: auto;
   width: 100%;
   position: fixed;
   z-index: 0;
-  top: 0;
-  left: 0;
-  overflow-x: hidden;
-  padding-top: 60px;
+  overflow: hidden;
+  padding-top: 0px;
   transition: 0.5s;
   background-color: #DB5F8E;
   }
@@ -66,7 +65,8 @@ Red(dark): #92141a
   text-align: center;
   padding: 16px 18px;
 }
-}
+#contactNav{float: right;} 
+#closebtn{display:none;}}
 
 body {
   margin: 0;

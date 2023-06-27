@@ -12,23 +12,16 @@
  <Title>Portfolio</title>
 </head>
 
- <div class = navBar>
-  <a href = "javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+ <div id ="sideNav" class ="navBar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
   <a href = "#home">Home</a>
   <a href = "#bio">Bio</a>
   <a href = "#certificate">Certificate</a>
-  <a style="float:right;" href = "#contact" >Contact</a>
+  <a href = "#contact" id = "contactNav">Contact</a>
  </div>
- 
-<span onclick="openNav()">open</span>
 
 <body>
- <div id ="sideNav" class ="navBar">
-  <a href = "#home">Home</a>
-  <a href = "#bio">Bio</a>
-  <a href = "#certificate">Certificate</a>
-  <a href = "#contact" >Contact</a>
- </div>
+<span onclick="openNav()">open</span>
  <div class = header>
   <div class = welcome>
    <span>Welcome </span>
@@ -48,7 +41,7 @@ function openNav() {
   document.getElementById("sideNav").style.width = "250px";
 }
 function closeNav() {
-  document.getElementById("sideNav").style.width = "0";
+  document.getElementById("sideNav").style.width = "0px";
 }
 </script>
 
