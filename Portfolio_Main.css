@@ -40,14 +40,13 @@ Red(dark): #92141a
   color: #DB5F8E;
 }
 
-.navBar .closebtn{
+#navCloseButton{
   position: absolute;
   top: 0;
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
 }
-
 
 @media only screen and (min-width: 768px){
 .navBar {
@@ -66,7 +65,9 @@ Red(dark): #92141a
   padding: 16px 18px;
 }
 #contactNav{float: right;} 
-#closebtn{display:none;}}
+#navCloseButton{display:none;}
+#navOpenButton{display: none;}
+}
 
 body {
   margin: 0;
