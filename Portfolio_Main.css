@@ -18,14 +18,12 @@ Red(dark): #92141a
   overflow: hidden;
   background-color: #DB5F8E;
 }
-
 .navBar a{
   text-decoration: none;
   display: block;
   font-size: 16px;
   color: #FFFFFF;
 }
-
 .navBar a:hover {
   background-color: #FFFFFF;
   color: #DB5F8E;
@@ -88,16 +86,30 @@ body {
   background-color: #898989;
   padding: 128px 10%;
 }
-
 .welcome{
   color: white;
   padding: 0px 0px 0px 10%;
   font-family: Pattaya;
   font-size: clamp(2.5em,8vw,6em);
 }
-
 .university{
   padding: 50px 0px 0px 0px;
   font-family: Kanit,Prompt,Pridi;
   font-size: clamp(0.8em,3vw,2em);
 }
+
+.bio{
+  padding: 50px 5%;
+  background-color: black;
+}
+#personalRecord{
+  color:white;
+  text-align: center;
+  font-family: Pattaya;
+  font-size: clamp(3em,7vw,5em);
+}
+.mySelf{
+  color: white;
+  padding: 0px 0px 0px 60%;
+}
+
