@@ -6,44 +6,53 @@
  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prompt">
  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit">
  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pridi">
-
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1">
  <Title>Portfolio</title>
 </head>
 
-<body>
- <div class = topNav>
-  <a href = "#home">Home</a>
-  <a href = "#bio">Bio</a>
-  <a href = "#certificate">Certificate</a>
-  <a style="float:right;" href = "#contact" >Contact</a>
- </div>
+<div id ="sideNav" class ="navBar">
+ <a href = "#home">Home</a>
+ <a href = "#bio">Bio</a>
+ <a href = "#certificate">Certificate</a>
+ <a href = "#contact" id = "contactNav">Contact</a>
+</div>
 
+<div class="animatedOpenButton" onclick="openNav(this)" id="navOpenButton">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>
+
+<body>
  <div class = header>
   <div class = welcome>
-   <span>Welcome </span>
-   <span>To</span>
+   <span>Welcome</span>
+   <span style = "font-size:50%;vertical-align:-1em;">To</span>
    <br><span>My Portfolio</span>
   </div>
-
   <div class = university>
-    <span>คณะวิศวกรรมศาสตร์ หลักสูตรวิศวกรรมศาสตรบัณฑิต</span>
-    <br><span>สาขาวิชาวิศวกรรมคอมพิวเตอร์และเทคโนโลยีดิจิทัล</span>
-    <br><span style="font-size:150%;">จุฬาลงกรณ์มหาวิทยาลัย</span>
+   <span>คณะวิศวกรรมศาสตร์ หลักสูตรวิศวกรรมศาสตรบัณฑิต</span>
+   <br><span>สาขาวิชาวิศวกรรมคอมพิวเตอร์และเทคโนโลยีดิจิทัล</span>
+   <br><span style="font-size:150%;">จุฬาลงกรณ์มหาวิทยาลัย</span>
   </div>
  </div>
 
  <div class = bio>
-  <div class = intro1>
-
+ <h2 id="personalRecord">ประวัติส่วนตัว<h2>
+  <div class = mySelf>
+   <span>what's up</span>
   </div>
-
-  <div>
-    
-  </div>
- </div>
-
+  
+ </div> 
 
 </body>
+
+<script>
+function openNav(x) {
+  document.getElementById("sideNav").classList.toggle("mobileNav");
+  x.classList.toggle("change");
+}
+</script>
+
 </html>
