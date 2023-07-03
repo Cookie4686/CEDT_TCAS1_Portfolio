@@ -35,6 +35,7 @@ Red(dark): #92141a
    width: 0;
    z-index: 1;
    padding-top: 60px;
+   transition: 0s;
  }
  .navBar a{
    padding: 8px 8px 8px 32px;
@@ -75,7 +76,9 @@ Red(dark): #92141a
 #contactNav{float: right;} 
 #navCloseButton{display:none;}
 #navOpenButton{display: none;}
+#toVerticalText {vertical-align:-1.5em}
 }
+
 
 body {
   margin: 0;
@@ -90,7 +93,7 @@ body {
   color: white;
   padding: 0px 0px 0px 10%;
   font-family: Pattaya;
-  font-size: clamp(2.5em,8vw,6em);
+  font-size: clamp(3em,8vw,6em);
 }
 .university{
   padding: 50px 0px 0px 0px;
@@ -106,7 +109,7 @@ body {
   color:white;
   text-align: center;
   font-family: Pattaya;
-  font-size: clamp(3em,7vw,5em);
+  font-size: clamp(2.5em,7vw,5em);
 }
 .mySelf{
   color: white;
