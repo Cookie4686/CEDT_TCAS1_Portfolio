@@ -29,6 +29,40 @@ Red(dark): #92141a
   color: #DB5F8E;
 }
 
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header{
+  background-color: #898989;
+}
+.welcome{
+  color: white;
+  font-family: Pattaya;
+  font-size: clamp(2em,8vw,6em);
+}
+.university{
+  font-family: Kanit,Prompt,Pridi;
+  font-size: clamp(0.7em,3vw,2em);
+}
+
+.bio{
+  background-color: black;
+}
+#personalRecord{
+  color:white;
+  text-align: center;
+  font-family: Pattaya;
+  font-size: clamp(1.5em,7vw,5em);
+  margin: 0;
+}
+.mySelf{
+  color: white;
+  padding: 0px 0px 0px 60%;
+}
+
+
 @media only screen and (max-width: 768px){
  .navBar{
    height: 100%;
@@ -56,9 +90,13 @@ Red(dark): #92141a
 .change .bar1 {transform: translate(0, 11px) rotate(-45deg);}
 .change .bar2 {opacity: 0;}
 .change .bar3 {transform: translate(0, -11px) rotate(45deg);}
-
 .mobileNav{width:250px;}
 #navOpenButton{position: fixed; z-index: 1;}
+
+.header{padding: 64px 5%;}
+.university{padding-top:20px;}
+
+.bio{padding: 32px 5%;}
 }
 
 @media only screen and (min-width: 768px){
@@ -76,43 +114,11 @@ Red(dark): #92141a
 #contactNav{float: right;} 
 #navCloseButton{display:none;}
 #navOpenButton{display: none;}
-#toVerticalText {vertical-align:-1.5em}
-}
 
+.header{padding: 128px 10%;}
+.welcome{padding: 0px 0px 0px 10%;}
+#toVerticalText {font-size: 50%;vertical-align:-1.5em}
+.university{padding-top:50px;}
 
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+.bio{padding: 50px 5%;}
 }
-
-.header{
-  background-color: #898989;
-  padding: 128px 10%;
-}
-.welcome{
-  color: white;
-  padding: 0px 0px 0px 10%;
-  font-family: Pattaya;
-  font-size: clamp(3em,8vw,6em);
-}
-.university{
-  padding: 50px 0px 0px 0px;
-  font-family: Kanit,Prompt,Pridi;
-  font-size: clamp(0.8em,3vw,2em);
-}
-
-.bio{
-  padding: 50px 5%;
-  background-color: black;
-}
-#personalRecord{
-  color:white;
-  text-align: center;
-  font-family: Pattaya;
-  font-size: clamp(2.5em,7vw,5em);
-}
-.mySelf{
-  color: white;
-  padding: 0px 0px 0px 60%;
-}
-
