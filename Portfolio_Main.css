@@ -41,6 +41,8 @@ body {
   color: white;
   font-family: Pattaya;
   font-size: clamp(2em,8vw,6em);
+  animation-name: fadeInUp;
+  animation-duration: 0.3s;
 }
 .university{
   font-family: Kanit,Prompt,Pridi;
@@ -69,7 +71,8 @@ body {
    width: 0;
    z-index: 1;
    padding-top: 60px;
-   transition: 0s;
+   transition: 0.3s;
+   opacity: 0;
  }
  .navBar a{
    padding: 8px 8px 8px 32px;
@@ -87,10 +90,10 @@ body {
   margin: 6px 0;
   transition: 0.4s;
 }
-.change .bar1 {transform: translate(0, 11px) rotate(-45deg);}
+.change .bar1 {transform: translate(0, 11px) rotate(-45deg);background-color: #FFFFFF;}
 .change .bar2 {opacity: 0;}
-.change .bar3 {transform: translate(0, -11px) rotate(45deg);}
-.mobileNav{width:250px;}
+.change .bar3 {transform: translate(0, -11px) rotate(45deg);background-color: #FFFFFF;}
+.mobileNav{width:250px; opacity: 100;}
 #navOpenButton{position: fixed; z-index: 1;}
 
 .header{padding: 64px 5%;}
@@ -121,4 +124,16 @@ body {
 .university{padding-top:50px;}
 
 .bio{padding: 50px 5%;}
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+
+  }
+  to {
+    opacity: 100;
+    transform: translateY(0px);
+  }
 }
