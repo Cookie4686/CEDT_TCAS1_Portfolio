@@ -8,15 +8,21 @@ Engineer
 Red: #941114
 Red(dark): #92141a
 */
-
 * {box-sizing: border-box;}
 
 .navBar {
+  height: 100%;
+  width: 0;
   position: fixed;
   overflow: hidden;
+  z-index: 1;
+  padding-top: 60px;
   background-color: #DB5F8E;
+  transition: 0.3s;
+  opacity: 0;
 }
 .navBar a{
+  padding: 8px 8px 8px 32px;
   text-decoration: none;
   display: block;
   font-size: 16px;
@@ -26,50 +32,6 @@ Red(dark): #92141a
   background-color: #FFFFFF;
   color: #DB5F8E;
 }
-
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.header{background-color: #898989;}
-.welcome{
-  color: white;
-  font-family: Pattaya;
-  font-size: clamp(2em,8vw,6em);
-  animation-name: fadeInUp;
-  animation-duration: 0.3s;
-}
-.university{
-  font-family: Kanit,Prompt,Pridi;
-  font-size: clamp(0.7em,3vw,2em);
-}
-
-.bio{background-color: black;}
-#personalRecord{
-  color:white;
-  text-align: center;
-  font-family: Pattaya;
-  font-size: clamp(1.5em,7vw,5em);
-  margin: 0;
-}
-.myInfo{
-  color: white;
-  padding-left:60%;
-}
-
-
-@media only screen and (max-width: 768px){
- .navBar{
-   height: 100%;
-   width: 0;
-   z-index: 1;
-   padding-top: 60px;
-   transition: 0.3s;
-   opacity: 0;
- }
- .navBar a{padding: 8px 8px 8px 32px;}
-
 .animatedOpenButton {
   padding:5px 0px 0px 10px;
   display: inline-block;
@@ -88,13 +50,39 @@ body {
 .mobileNav{width:250px; opacity: 100;}
 #navOpenButton{position: fixed; z-index: 1;}
 
-.header{padding: 64px 5%;}
-.university{padding-top:20px;}
-
-.bio{padding: 32px 5%;}
-#bioImg{display: none;}
-.myInfo{padding-left:10%;}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
+
+.header{padding: 64px 5%; background-color: #898989; }
+.welcome{
+  color: white;
+  font-family: Pattaya;
+  font-size: clamp(2em,8vw,6em);
+  animation-name: fadeInUp;
+  animation-duration: 0.3s;
+}
+.university{
+  font-family: Kanit,Prompt,Pridi;
+  font-size: clamp(0.7em,3vw,2em);
+  padding-top:20px;
+}
+
+.bio{padding: 32px 5%; background-color: black;}
+#bioImg{display: none;}
+#personalRecord{
+  color:white;
+  text-align: center;
+  font-family: Pattaya;
+  font-size: clamp(1.5em,7vw,5em);
+  margin: 0;
+}
+.myInfo{
+  color: white;
+  padding-left:10%;
+}
+
 
 @media only screen and (min-width: 768px){
 .navBar {
@@ -102,6 +90,7 @@ body {
   width: 100%;
   z-index: 0;
   padding-top: 0px;
+  opacity: 1;
   }
 .navBar a{
   float: left;
@@ -109,8 +98,7 @@ body {
   padding: 16px 18px;
 }
 #contactNav{float: right;} 
-#navCloseButton{display:none;}
-#navOpenButton{display: none;}
+#navCloseButton,#navOpenButton{display:none;}
 
 .header{padding: 128px 10%;}
 .welcome{padding: 0px 0px 0px 10%;}
@@ -118,6 +106,8 @@ body {
 .university{padding-top:50px;}
 
 .bio{padding: 50px 5%;}
+#bioImg{display: initial;}
+.myInfo{padding-left:60%;}
 }
 
 @keyframes fadeInUp {
