@@ -10,46 +10,6 @@ Red(dark): #92141a
 */
 * {box-sizing: border-box;}
 
-.navBar {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  overflow: hidden;
-  z-index: 1;
-  padding-top: 60px;
-  background-color: #DB5F8E;
-  transition: 0.3s;
-  opacity: 0;
-}
-.navBar a{
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  display: block;
-  font-size: 16px;
-  color: #FFFFFF;
-}
-.navBar a:hover {
-  background-color: #FFFFFF;
-  color: #DB5F8E;
-}
-.animatedOpenButton {
-  padding:5px 0px 0px 10px;
-  display: inline-block;
-  cursor: pointer;
-}
-.bar1, .bar2, .bar3 {
-  width: 30px;
-  height: 5px;
-  background-color: #000000;
-  margin: 6px 0;
-  transition: 0.4s;
-}
-.change .bar1 {transform: translate(0, 11px) rotate(-45deg);background-color: #FFFFFF;}
-.change .bar2 {opacity: 0;}
-.change .bar3 {transform: translate(0, -11px) rotate(45deg);background-color: #FFFFFF;}
-.mobileNav{width:250px; opacity: 100;}
-#navOpenButton{position: fixed; z-index: 1;}
-
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -85,21 +45,6 @@ body {
 
 
 @media only screen and (min-width: 768px){
-.navBar {
-  height: auto;
-  width: 100%;
-  z-index: 0;
-  padding-top: 0px;
-  opacity: 1;
-  }
-.navBar a{
-  float: left;
-  text-align: center;
-  padding: 16px 18px;
-}
-#contactNav{float: right;} 
-#navCloseButton,#navOpenButton{display:none;}
-
 .header{padding: 128px 10%;}
 .welcome{padding: 0px 0px 0px 10%;}
 #toVerticalText {font-size: 50%;vertical-align:-1.5em}
