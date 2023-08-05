@@ -21,6 +21,7 @@ nav {
   padding-top: 4em;
   transition: 0.3s;
   opacity: 0;
+  top: 0px;
 }
 nav a{
   color: #FFFFFF;
@@ -38,7 +39,6 @@ nav :hover {
 .sideNav {
   width: 50%; 
   opacity: 1;
-  top: 0px !important; /*JS topNavShrink() use inline style to change top attr*/
 }
 
 .navMenuIcon {
