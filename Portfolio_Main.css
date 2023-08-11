@@ -1,12 +1,13 @@
 /* 
 Pink(main): #DB5F8E
 Pink(sec): #DD78A6
-Cool Gray: #DDDDDD 
-Gray: #898989 
+Cool Gray: #DDDDDD
+Gray: #898989
 
 Engineer 
 Red: #941114
 Red(dark): #92141a
+Interesting: #541c30
 */
 /* * {box-sizing: border-box;} */
 
@@ -14,26 +15,29 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
-h1 {
-  font-size: clamp(2.25em,10.5vw,7.5em);
+
+header {
+  height: 100vh;
+  background-color: #898989; 
+  color: white;
+}
+header .headerText{
+  padding-top: 10vh;
+  padding-left: 5vw;
+}
+header p{
+  margin: 0;
+  padding: 10vh 0 20vh 0;
+  font-family: Kanit,Pridi,Helvetica,Arial;
+  font-size: clamp(2vh,4vw,5vh);
+}
+header h1{
+  padding-left: 10vw;
+  font-size: clamp(6vh,12vw,15vh);
   margin-block: 0;
   margin-inline: 0;
   font-weight: normal;
   font-family: Pattaya;
-  padding: 1em 0 0.5em 1em;
-}
-
-header {
-  background-color: #898989; 
-  color: white;
-}
-header p{
-  margin: 0;   
-  font-family: Kanit,Pridi,Helvetica,Arial;
-  font-size: clamp(0.7em,3vw,2em);
-  padding: 0 0 3em 1.5em;
-}
-header h1{
   animation-name: fadeInUp;
   animation-duration: 0.3s;
 }
