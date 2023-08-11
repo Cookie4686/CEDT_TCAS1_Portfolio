@@ -8,25 +8,34 @@ Engineer
 Red: #941114
 Red(dark): #92141a
 */
-* {box-sizing: border-box;}
+/* * {box-sizing: border-box;} */
 
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
-
-.header{padding: 64px 5%; background-color: #898989; }
-.welcome{
-  color: white;
+h1 {
+  font-size: clamp(2.25em,10.5vw,7.5em);
+  margin-block: 0;
+  margin-inline: 0;
+  font-weight: normal;
   font-family: Pattaya;
-  font-size: clamp(2em,8vw,6em);
+  padding: 1em 0 0.5em 1em;
+}
+
+header {
+  background-color: #898989; 
+  color: white;
+}
+header p{
+  margin: 0;   
+  font-family: Kanit,Pridi,Helvetica,Arial;
+  font-size: clamp(0.7em,3vw,2em);
+  padding: 0 0 3em 1.5em;
+}
+header h1{
   animation-name: fadeInUp;
   animation-duration: 0.3s;
-}
-.university{
-  font-family: Kanit,Prompt,Pridi;
-  font-size: clamp(0.7em,3vw,2em);
-  padding-top:20px;
 }
 
 .bio{padding: 32px 5%; background-color: black;}
@@ -45,11 +54,6 @@ body {
 
 
 @media only screen and (min-width: 768px){
-.header{padding: 128px 10%;}
-.welcome{padding: 0px 0px 0px 10%;}
-#toVerticalText {font-size: 50%;vertical-align:-1.5em}
-.university{padding-top:50px;}
-
 .bio{padding: 50px 5%;}
 #bioImg{display: initial;}
 .myInfo{padding-left:60%;}
