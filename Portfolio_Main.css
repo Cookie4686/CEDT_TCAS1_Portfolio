@@ -13,7 +13,7 @@ Interesting: #541c30
 
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Kanit,Pridi,Helvetica,Arial;
 }
 
 header {
@@ -25,12 +25,6 @@ header .headerText{
   padding-top: 10vh;
   padding-left: 5vw;
 }
-header p{
-  margin: 0;
-  padding: 10vh 0 20vh 0;
-  font-family: Kanit,Pridi,Helvetica,Arial;
-  font-size: clamp(2vh,4vw,5vh);
-}
 header h1{
   padding-left: 10vw;
   font-size: clamp(6vh,12vw,15vh);
@@ -39,7 +33,17 @@ header h1{
   font-weight: normal;
   font-family: Pattaya;
   animation-name: fadeInUp;
-  animation-duration: 0.3s;
+  animation-duration: 0.5s;
+}
+.headerText2{
+  padding: 10vh 0 20vh 0;
+  font-size: clamp(2vh,4vw,5vh);
+}
+.headerText2 p{
+  margin: 0;
+  opacity: 0;
+  animation: fadeInLeft 1s forwards;
+  animation-delay: calc(var(--order)*200ms);
 }
 
 .bio{padding: 32px 5%; background-color: black;}
@@ -66,10 +70,21 @@ header h1{
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(-50px);
+    transform: translateY(-30%);
   }
   to {
-    opacity: 100;
-    transform: translateY(0px);
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-15%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
