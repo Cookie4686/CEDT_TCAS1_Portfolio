@@ -14,15 +14,17 @@ Interesting: #541c30
 body {
   margin: 0;
   font-family: Kanit,Pridi,Helvetica,Arial;
+  font-size: clamp(2vh,4vw,5vh);
   color: white;
 }
-h2 {
-  margin: 0;
+h1,h2 {
   margin-block: 0;
   margin-inline: 0;
+  font-family: Pattaya;
+}
+h2 {
   padding: 1em 0;
   text-align: center;
-  font-family: Pattaya;
   font-size: clamp(3vh,6vw,10vh);
 }
 
@@ -31,24 +33,15 @@ header {
   height: 100vh;
   background-color: #898989; 
 }
-header .headerText{
-  padding-top: 10vh;
-  padding-left: 5vw;
-}
+header .headerText {padding: 10vh 0 0 5vw;}
 header h1{
   padding-left: 10vw;
   font-size: clamp(6vh,12vw,15vh);
-  margin-block: 0;
-  margin-inline: 0;
   font-weight: normal;
-  font-family: Pattaya;
   animation-name: fadeInUp;
   animation-duration: 0.5s;
 }
-.headerText2{
-  padding: 10vh 0 20vh 0;
-  font-size: clamp(2vh,4vw,5vh);
-}
+.headerText2 {padding-top: 10vh;}
 .headerText2 p{
   margin: 0;
   opacity: 0;
@@ -56,28 +49,16 @@ header h1{
   animation-delay: calc(var(--order)*300ms);
 }
 
-main{
-  background-color: black;
-  font-size: clamp(2vh,4vw,5vh);
-}
+main {background-color: black;}
 
-.myInfo {
-  padding: 0 10% 0 10%;
-}
-.bio img{
-  width: 40%;
-  object-fit: contain;
-}
+.myInfo {padding: 0 10% 0 10%;}
+.bio img {width: 40%;}
 .bio table{
   padding-left: 10%;
   font-size: clamp(1vh,3vw,10vh);
 }
-.bio td {
-  padding: 0.75em 0;
-}
-.bio td:nth-child(even){
-  padding: 0 0.5em;
-}
+.bio td {padding: 0.75em 0;}
+.bio td:nth-child(even) {padding: 0 0.5em;}
 
 @keyframes fadeInUp {
   from {
