@@ -14,12 +14,22 @@ Interesting: #541c30
 body {
   margin: 0;
   font-family: Kanit,Pridi,Helvetica,Arial;
+  color: white;
+}
+h2 {
+  margin: 0;
+  margin-block: 0;
+  margin-inline: 0;
+  padding: 1em 0;
+  text-align: center;
+  font-family: Pattaya;
+  font-size: clamp(3vh,6vw,10vh);
 }
 
+  
 header {
   height: 100vh;
   background-color: #898989; 
-  color: white;
 }
 header .headerText{
   padding-top: 10vh;
@@ -42,29 +52,31 @@ header h1{
 .headerText2 p{
   margin: 0;
   opacity: 0;
-  animation: fadeInLeft 1s forwards;
-  animation-delay: calc(var(--order)*200ms);
+  animation: fadeInLeft 0.75s forwards;
+  animation-delay: calc(var(--order)*300ms);
 }
 
-.bio{padding: 32px 5%; background-color: black;}
-#bioImg{display: none;}
-#personalRecord{
-  color:white;
-  text-align: center;
-  font-family: Pattaya;
-  font-size: clamp(1.5em,7vw,5em);
-  margin: 0;
-}
-.myInfo{
-  color: white;
-  padding-left:10%;
+main{
+  background-color: black;
+  font-size: clamp(2vh,4vw,5vh);
 }
 
-
-@media only screen and (min-width: 768px){
-.bio{padding: 50px 5%;}
-#bioImg{display: initial;}
-.myInfo{padding-left:60%;}
+.myInfo {
+  padding: 0 10% 0 10%;
+}
+.bio img{
+  width: 40%;
+  object-fit: contain;
+}
+.bio table{
+  padding-left: 10%;
+  font-size: clamp(1vh,3vw,10vh);
+}
+.bio td {
+  padding: 0.75em 0;
+}
+.bio td:nth-child(even){
+  padding: 0 0.5em;
 }
 
 @keyframes fadeInUp {
@@ -77,7 +89,6 @@ header h1{
     transform: translateY(0);
   }
 }
-
 @keyframes fadeInLeft {
   from {
     opacity: 0;
