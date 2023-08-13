@@ -48,9 +48,10 @@ nav :hover {
 }
 
 .navMenuIcon {
-  padding: 5px 0px 0px 10px;
   cursor: pointer;
   position: fixed;
+  top: 2.5vh;
+  left: 5vw;
   z-index: 1;
 }
 #bar1, #bar2, #bar3 {
