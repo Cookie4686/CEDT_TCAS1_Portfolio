@@ -9,7 +9,7 @@ Red: #941114
 Red(dark): #92141a
 Interesting: #541c30
 */
-/* * {box-sizing: border-box;} */
+* {box-sizing: border-box;}
 
 body {
   margin: 0;
@@ -27,7 +27,7 @@ h2 {
   text-align: center;
   font-size: clamp(4vh,8vw,10vh);
 }
-
+p {margin: 0;}
 
 header {
   height: 100vh;
@@ -53,18 +53,31 @@ header h1{
 main {background-color: black;}
 
 .myInfo {padding: 0 10% 0 15%;}
-.bio img {width: 35%;}
-.bio table{
-  padding-left: 15%;
-}
-.bio td {padding: 0.5em 0;}
+.bio img {width: 30%;}
+.bio table{padding-left: 15%;}
+.bio td {padding: 0.25em 0;}
 .bio td:nth-child(even) {padding: 0 0.5em;}
 
 .education-recordText1,.education-recordText2 {
-  background: url(SCA_logo.png) 25% no-repeat;
+  background: url(SCA_logo.png) 20% no-repeat;
   background-size: contain;
-  padding-left: 50%;
+  padding-left: 40%;
 }
+
+.generalSkill{padding:0 5%;}
+.skillBar {
+  width: 100%;
+  background-color: #ddd;
+}
+.skills {
+  text-align: right;
+  padding: 10px 10px 10px 0;
+  color: white;
+}
+
+.english {width: 75%; background-color: #04AA6D;}
+.leadership {width: 30%; background-color: #2196F3;}
+.teamwork {width: 45%; background-color: #f44336;}
 
 
 
