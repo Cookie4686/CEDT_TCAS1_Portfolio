@@ -2,6 +2,7 @@
 <html lang="th-th">
 <head>
  <link rel="stylesheet" href="NavBar.css">
+ <link rel="stylesheet" href="ScrollAnimation.css">
  <link rel="stylesheet" href="Portfolio_main.css">
  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pattaya">
  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit">
@@ -41,10 +42,9 @@
  </header>
 
 <main>
- <section class="bio" id="bio">
-  <div class="personal-record">
-  <h2>ประวัติส่วนตัว</h2>
-    <div class = myInfo>
+<section id="bio">
+  <h2 class="scrollFadeInLeftHidden">ประวัติส่วนตัว</h2>
+    <div class = "myInfo scrollFadeHidden">
       <img style="float: left;" src="MySelf.png">
       <table>
       <tbody>
@@ -81,10 +81,11 @@
       </tbody>
       </table>
     </div>
-  </div>
+</section> 
 
-  <div class="education-record">
-    <h2>ประวัติการศึกษา</h2>
+<section>
+  <h2 class="scrollFadeInLeftHidden">ประวัติการศึกษา</h2>
+  <div class="scrollFadeHidden">
     <div class="education-recordText1">
       <p style="margin-bottom: 2em;">
       <span style="font-size:125%;">โรงเรียนสามมุกคริสเตียนวิทยา</span>
@@ -102,9 +103,11 @@
         </p>
     </div>
   </div>
+</section>
 
-  <div class="skill-record">
-    <h2>ทักษะความสามารถ</h2>
+<section>
+  <h2 class="scrollFadeInLeftHidden">ทักษะความสามารถ</h2>
+  <div class="scrollFadeHidden">
     <div class="generalSkill">
     <p>การใช้ภาษาอังกฤษ</p>
       <div class="skillBar">
@@ -120,8 +123,7 @@
       </div>
     </div>
   </div>
-
- </section> 
+</section>
 </main>
 </body>
 
@@ -143,5 +145,32 @@ function topNavShrink() {
     }
   prevScrollpos = currentScrollPos;
 }
+
+const scrollFadeInLeft = new IntersectionObserver((entries) => {
+   entries.forEach((entry) => {
+    if (entry.isIntersecting){
+        entry.target.classList.add('scrollFadeInLeftShow');
+    } else{
+        entry.target.classList.remove('scrollFadeInLeftShow');
+    }
+   }); 
+});
+const scrollFade = new IntersectionObserver((entries) => {
+   entries.forEach((entry) => {
+    if (entry.isIntersecting){
+        entry.target.classList.add('scrollFadeShow');
+    } else{
+        entry.target.classList.remove('scrollFadeShow');
+    }
+   }); 
+});
+
+
+
+
+const hiddenFadeInLeft = document.querySelectorAll('.scrollFadeInLeftHidden');
+const hiddenFade = document.querySelectorAll('.scrollFadeHidden');
+hiddenFadeInLeft.forEach((el) => scrollFadeInLeft.observe(el));
+hiddenFade.forEach((el) => scrollFade.observe(el));
 </script>
 </html>

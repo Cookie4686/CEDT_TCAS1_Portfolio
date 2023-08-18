@@ -1,0 +1,19 @@
+.scrollFadeInLeftHidden {
+  opacity: 0;
+  filter: blur(3px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+.scrollFadeInLeftShow {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+.scrollFadeHidden {
+  opacity: 0;
+  transition: all 2s;
+}
+.scrollFadeShow {
+  opacity: 1;
+}
