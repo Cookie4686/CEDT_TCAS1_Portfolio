@@ -9,7 +9,10 @@ Red: #941114
 Red(dark): #92141a
 Interesting: #541c30
 */
-* {box-sizing: border-box;}
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
@@ -53,10 +56,10 @@ header h1{
 main {background-color: black;}
 
 .myInfo {padding: 0 10% 0 15%;}
-.bio img {width: 30%;}
-.bio table{padding-left: 15%;}
-.bio td {padding: 0.25em 0;}
-.bio td:nth-child(even) {padding: 0 0.5em;}
+.myInfo img {width: 30%;}
+.myInfo table{padding-left: 15%;}
+.myInfo td {padding: 0.25em 0;}
+.myInfo td:nth-child(even) {padding: 0 0.5em;}
 
 .education-recordText1,.education-recordText2 {
   background: url(SCA_logo.png) 20% no-repeat;
