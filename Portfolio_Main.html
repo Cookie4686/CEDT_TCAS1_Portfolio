@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="th-th">
 <head>
- <link rel="stylesheet" href="NavBar.css">
- <link rel="stylesheet" href="ScrollAnimation.css">
+ <link rel="stylesheet" href="../Components/NavBar.css">
+ <link rel="stylesheet" href="../Components/ScrollAnimation.css">
  <link rel="stylesheet" href="Portfolio_main.css">
  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pattaya">
  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit">
@@ -44,36 +44,36 @@
 <main>
 <section id="bio">
   <h2 class="scrollFadeInLeftHidden">ประวัติส่วนตัว</h2>
-    <div class = "myInfo scrollFadeHidden">
-      <img style="float: left;" src="MySelf.png">
+    <div class = "myInfo">
+      <img style="float: left;" src="../Images/MySelf.png" class="scrollFadeHidden">
       <table>
       <tbody>
-        <tr>
-          <td >ชื่อ-สกุล</td>
-          <td >:</td>
-          <td >ศิวพัฒิ สวัสดิชัย</td>
+        <tr class="scrollFadeHidden">
+          <td>ชื่อ-สกุล</td>
+          <td>:</td>
+          <td>ศิวพัฒิ สวัสดิชัย</td>
         </tr>
-        <tr>
+        <tr class="scrollFadeHidden">
           <td>ชื่อเล่น</td>
           <td>:</td>
           <td>นะโม</td>
         </tr>
-        <tr>
+        <tr class="scrollFadeHidden">
           <td>อายุ</td>
           <td>:</td>
           <td>18 ปี</td>
         </tr>
-        <tr>
+        <tr class="scrollFadeHidden">
           <td>วันเกิด</td>
           <td>:</td>
           <td>28/07/2548</td>
         </tr>
-        <tr>
+        <tr class="scrollFadeHidden">
           <td>ศาสนา</td>
           <td>:</td>
           <td>คริสต์</td>
         </tr>
-        <tr>
+        <tr class="scrollFadeHidden">
           <td>สัญชาติ</td>
           <td>:</td>
           <td>ไทย</td>
@@ -83,46 +83,46 @@
     </div>
 </section> 
 
-<section>
+<section class="education-record">
   <h2 class="scrollFadeInLeftHidden">ประวัติการศึกษา</h2>
-  <div class="scrollFadeHidden">
-    <div class="education-recordText1">
-      <p style="margin-bottom: 2em;">
+    <div class="scrollFadeHidden">
+      <p style="margin-bottom: 0.5em;">
       <span style="font-size:125%;">โรงเรียนสามมุกคริสเตียนวิทยา</span>
       <br><span style="padding-left: 1em;">ชั้นมัธยมศึกษาปีที่ 1-3</span>
-      <br>เกรดเฉลี่ย : 
+      </p>
+      <p style="margin-bottom: 2em;">เกรดเฉลี่ย : 
       <br>แผนการเรียน : วิทย์-คณิต 
       </p>
     </div>
-    <div class="education-recordText2">
-      <p>
+    <div class="scrollFadeHidden">
+      <p style="margin-bottom: 0.5em;">
         <span style="font-size:125%;">โรงเรียนสามมุกคริสเตียนวิทยา</span>
         <br><span style="padding-left: 1em;">ชั้นมัธยมศึกษาปีที่ 4-6</span>
-        <br>เกรดเฉลี่ย : 
+      </p>
+      <p>เกรดเฉลี่ย : 
         <br>แผนการเรียน : วิทย์-คณิต 
-        </p>
-    </div>
+      </p>
   </div>
 </section>
 
 <section>
   <h2 class="scrollFadeInLeftHidden">ทักษะความสามารถ</h2>
-  <div class="scrollFadeHidden">
-    <div class="generalSkill">
-    <p>การใช้ภาษาอังกฤษ</p>
-      <div class="skillBar">
+    <p class="scrollFadeHidden">การใช้ภาษาอังกฤษ</p>
+      <div class="skillBar scrollFadeHidden">
         <div class="english skills">75%</div>
       </div>
-    <p>ความเป็นผู้นำ</p>
-      <div class="skillBar">
+    <p class="scrollFadeHidden">ความเป็นผู้นำ</p>
+      <div class="skillBar scrollFadeHidden">
         <div class="leadership skills">30%</div>
       </div>
-    <p>การทำงานเป็นทีม</p>
-      <div class="skillBar">
+    <p class="scrollFadeHidden">การทำงานเป็นทีม</p>
+      <div class="skillBar scrollFadeHidden">
         <div class="teamwork skills">45%</div>
       </div>
-    </div>
-  </div>
+</section>
+
+<section>
+
 </section>
 </main>
 </body>
@@ -145,32 +145,7 @@ function topNavShrink() {
     }
   prevScrollpos = currentScrollPos;
 }
-
-const scrollFadeInLeft = new IntersectionObserver((entries) => {
-   entries.forEach((entry) => {
-    if (entry.isIntersecting){
-        entry.target.classList.add('scrollFadeInLeftShow');
-    } else{
-        entry.target.classList.remove('scrollFadeInLeftShow');
-    }
-   }); 
-});
-const scrollFade = new IntersectionObserver((entries) => {
-   entries.forEach((entry) => {
-    if (entry.isIntersecting){
-        entry.target.classList.add('scrollFadeShow');
-    } else{
-        entry.target.classList.remove('scrollFadeShow');
-    }
-   }); 
-});
-
-
-
-
-const hiddenFadeInLeft = document.querySelectorAll('.scrollFadeInLeftHidden');
-const hiddenFade = document.querySelectorAll('.scrollFadeHidden');
-hiddenFadeInLeft.forEach((el) => scrollFadeInLeft.observe(el));
-hiddenFade.forEach((el) => scrollFade.observe(el));
+</script>
+<script defer src="../Components/ScrollAnimation.js">
 </script>
 </html>

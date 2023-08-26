@@ -13,13 +13,20 @@ Interesting: #541c30
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+:root {
+  --bgColor: black;
+  --textColor : white;
+}
+
 
 body {
   margin: 0;
   font-family: Kanit,Pridi,Helvetica,Arial;
   font-size: clamp(1vh,3vw,6vh);
-  color: white;
+  color: var(--textColor);
+  background-color: var(--bgColor);
 }
+main {padding: 0 5vw;}
 h1,h2 {
   margin-block: 0;
   margin-inline: 0;
@@ -35,6 +42,7 @@ p {margin: 0;}
 header {
   height: 100vh;
   background-color: #898989; 
+  color: white;
 }
 header .headerText {padding: 10vh 0 0 5vw;}
 header h1{
@@ -53,16 +61,14 @@ header h1{
   animation-delay: calc(var(--order)*300ms);
 }
 
-main {background-color: black;}
-
-.myInfo {padding: 0 10% 0 15%;}
+.myInfo {padding: 0 5%;}
 .myInfo img {width: 30%;}
 .myInfo table{padding-left: 15%;}
 .myInfo td {padding: 0.25em 0;}
 .myInfo td:nth-child(even) {padding: 0 0.5em;}
 
-.education-recordText1,.education-recordText2 {
-  background: url(SCA_logo.png) 20% no-repeat;
+.education-record div {
+  background: url(../Images/SCA_logo.png) 15% no-repeat;
   background-size: contain;
   padding-left: 40%;
 }
