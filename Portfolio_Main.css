@@ -40,9 +40,9 @@ h2 {
 p {margin: 0;}
 
 header {
-  height: 100vh;
-  background-color: #898989; 
+  height: 200vh;
   color: white;
+  background-image: linear-gradient(#898989 30%,var(--bgColor)); 
 }
 header .headerText {padding: 10vh 0 0 5vw;}
 header h1{
