@@ -22,7 +22,7 @@ Interesting: #541c30
 body {
   margin: 0;
   font-family: Kanit,Pridi,Helvetica,Arial;
-  font-size: clamp(1vh,3vw,6vh);
+  font-size: clamp(1.5vh,3vw,3.75vh);
   color: var(--textColor);
   background-color: var(--bgColor);
 }
@@ -33,9 +33,9 @@ h1,h2 {
   font-family: Pattaya;
 }
 h2 {
-  padding: 1em 0;
+  padding: 1.5em 0;
   text-align: center;
-  font-size: clamp(4vh,8vw,10vh);
+  font-size: clamp(3vh,6vw,7.5vh);
 }
 p {margin: 0;}
 
@@ -61,14 +61,27 @@ header h1{
   animation-delay: calc(var(--order)*300ms);
 }
 
-.myInfo {padding: 0 5%;}
-.myInfo img {width: 30%;}
-.myInfo table{padding-left: 15%;}
+
+/* Need to fix this
+.myInfo {
+  height: calc(2*17.5vw);
+}
+.myInfo img {
+  float: left;
+  width: 35%;
+  padding-left: 10%;
+}
+.myInfo table {
+  float: right;
+  height: 100%;
+  padding-right: 20%;
+
+}
 .myInfo td {padding: 0.25em 0;}
-.myInfo td:nth-child(even) {padding: 0 0.5em;}
+.myInfo td:nth-child(even) {padding: 0 0.5em;} */
 
 .education-record div {
-  background: url(../Images/SCA_logo.png) 15% no-repeat;
+  background: url(../../Images/SCA_logo.png) 15% no-repeat;
   background-size: contain;
   padding-left: 40%;
 }
