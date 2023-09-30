@@ -1,66 +1,120 @@
 @media only screen and (min-width:768px) {
-  .navMenuIcon {display:none;}
-  #topNav {
-    height: auto;
-    width: 100%;
-    padding-top: 0;
-    opacity: 1;
+  .navMenuIcon {display: none;}
+  nav .logo {position: static;}
+  #topNav a {
+    display: inline-block;
+    font-size: clamp(1.25vh,2.5vw,2.8vh);
   }
-  #topNav a{font-size: clamp(1.5vh,2.5vw,3vh);}
-  .topNavShrink{top: -10vh;}
-  nav a{float: left;}
+  #topNav .navLink a {float: left;}
+  #topNav #navContact {float: right;}
+  #topNav .navLanguage a {font-size: clamp(1vh,2vw,2.25vh);}
+  #topNav {padding-top: 0; height: 8vh;}
+  #topNav .navExtra{display: block; float: right;}
+  #topNav .navExtra , #topNav .navLink a {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
   #navContact {float: right;}
+  .darkMode .darkModeSun {fill: black;} 
+  .darkMode #darkModeMenu:hover .darkModeSun {fill: white;}
 }
 
 :root {
   --navBgColor: #DD78A6;
   --navTextColor : white;
 }
+.darkMode {
+  --bgColor : black;
+  --textColor : white;
+  --navBgColor: #DB5F8E;
+}
 
 nav {
   background-color: var(--navBgColor);
-  height: 100%;
-  width: 0;
+  height: 8vh;
+  line-height: 8vh;
+  width: 100%;
   overflow: hidden;
   position: fixed;
-  z-index: 1;
-  padding-top: 4em;
-  transition: 0.3s;
-  opacity: 0;
   top: 0px;
+  z-index: 1;
+  transition: 0.3s;
 }
-nav a{
+.logo {
+  position: fixed;
+  top:0;
+  float: left;
+  padding: 1vh 0.5em;
+}
+
+nav a {
   color: var(--navTextColor);
   text-decoration: none;
   text-align: center;
   font-family: sans-serif, Arial, Helvetica;
-  font-size: clamp(2vh,4vw,5vh);
-  padding: 1em 1em;
-  display: block;
+  font-size: clamp(2vh,4vw,4.5vh);
+  padding: 0px 0.5em;
 }
-nav :hover {
+nav a:hover {
   background-color: var(--navTextColor);
   color: var(--navBgColor);
 }
-.sideNav {
-  width: 50%; 
-  opacity: 1;
+.navExtra {
+  height: 8vh;
+  float: right;
 }
+.navLanguage {
+  display: block;
+  float: right;
+}
+.navLanguage a {
+  display: inline;
+  float: right;
+  font-size: clamp(1.5vh,3vw,3.375vh);
+}
+.navExtra,.navLink a {
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+#darkModeMenu {
+  cursor: pointer;
+  padding: 1vh 0.5em;
+}
+#darkModeMenuBG {fill: var(--bgColor)}
+#darkModeMenuBG,#darkModeSelector {transition: 0.3s;}
 
 .navMenuIcon {
   cursor: pointer;
   position: fixed;
-  top: 2.5vh;
-  left: 5vw;
-  z-index: 1;
+  height: 4vh;
+  top: 2vh;
+  right: 2.5vw;
 }
-#bar1, #bar2, #bar3 {
+.navMenuIcon div {
   background-color: white;
-  height: 5px;
-  width: 30px;
-  margin: 6px 0;
+  position: relative;
+  width: 4vh;
+  height: 15%;
   transition: 0.3s;
 }
-.change #bar1{transform: translate(0, 11px) rotate(-45deg);}
-.change #bar2 {opacity: 0;}
-.change #bar3 {transform: translate(0, -11px) rotate(45deg);}
+#MenuIconBar1 {top: 0;}
+#MenuIconBar2 {top: 20%;}
+#MenuIconBar3 {top: 40%;}
+
+.navLink a {display: none;}
+.navExtra {display: none;}
+
+
+.darkMode #darkModeSelector {transform: translateX(50%);}
+.darkModeSun {fill: white; transition: 0.5s;}
+.darkModeMoon {fill: black;}
+.darkMode .darkModeMoon {fill: white;}
+
+.navOpened .navHideIcon {display: none;}
+.navOpened {padding-top: 8vh; height: 100%;}
+.navOpened .navLink a {float: none; display: block;}
+.navOpened .navExtra {display: block; float: none;}
+
+.navOpened #MenuIconBar1{top: 50%; transform: rotate(-45deg);}
+.navOpened #MenuIconBar2 {opacity: 0;}
+.navOpened #MenuIconBar3 {top: 20%; transform:rotate(45deg);}
