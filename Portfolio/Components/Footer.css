@@ -1,0 +1,21 @@
+footer {
+    background-color: var(--navBgColor);
+    height: 256px;
+    margin-top: 10vh;
+}
+footer a {
+    color: var(--navTextColor);
+    text-decoration: none;
+    text-align: center;
+    font-family: sans-serif, Arial, Helvetica;
+    font-size: clamp(2vh,4vw,5vh);
+    padding: 1em 1em;
+    display: block;
+}
+
+@media only screen and (min-width:768px) {
+    #footer a {
+        display: inline-block;
+        font-size: clamp(1.5vh,2.5vw,3vh);
+    }    
+}
