@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 <html lang="th-th">
 <head>
-  <Title>Sivaphat's Portfolio</title>
+  <Title>Sivaphat's Skills</title>
   <link rel="stylesheet" href="../Components/NavBar.css">
   <link rel="stylesheet" href="../Components/Portfolio.css">
   <meta charset="UTF-8">
-  <meta name="description" content="Welcome to Sivaphat's Portfolio">
+  <meta name="description" content="Sivaphat's Skill Page">
   <meta name="author" content="Sivaphat Sawatdichai">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+
+<style>
+  .skillBar {
+    width: 100%;
+    background-color: #ddd;
+  }
+  .skillBarScore {
+    text-align: right;
+    padding: 10px 10px 10px 0;
+    color: white;
+    width: var(--score);
+    background-color: var(--barColor);
+  }
+</style>
   
 <body>
   <nav id="topNav">
@@ -53,7 +67,7 @@
       </div>
     </div>
     <div class="navLink">
-      <a href="">Home</a>
+      <a href="../">Home</a>
       <a href="Biography.html">Biography</a>
       <a href="">My Skills</a>
       <a href="#footer" id="navContact">Contact</a>
@@ -72,15 +86,15 @@
       <h2>ทักษะความสามารถ</h2>
       <!-- ใช้เป็น Dropdown Menu ที่จะมีหัวข้อย่อยลงมา เหมือนในหลายๆ web ที่เคยเห็น -->
         <p class="noMargin">Social and Teamwork Skills</p>
-          <div class="skillBar scrollFadeHidden">
+          <div class="skillBar">
             <div class="skillBarScore" style="--score:60%;--barColor:red;">60%</div>
           </div>
         <p class="noMargin">Creativity and Critical Thinking</p>
-          <div class="skillBar scrollFadeHidden">
+          <div class="skillBar">
             <div class="skillBarScore" style="--score:75%;--barColor:blue;">75%</div>
           </div>
         <p class="noMargin">Motivation and Self-Awareness</p>
-          <div class="skillBar scrollFadeHidden">
+          <div class="skillBar">
             <div class="skillBarScore" style="--score:70%;--barColor:orange;">70%</div>
           </div>
     </section>
