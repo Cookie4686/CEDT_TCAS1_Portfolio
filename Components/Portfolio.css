@@ -55,7 +55,6 @@ a {color: blue;}
 .center {text-align: center;}
 .tab {padding-left: 1em;}
 .sub {vertical-align: sub;}
-.small2 {font-size: 0.5em;}
 .small1 {font-size: 0.67em;}
 .big1 {font-size: 1.33em;}
 .big2 {font-size: 1.67em;}
@@ -63,15 +62,15 @@ a {color: blue;}
 
 
 /* Classes For div and Other Container */
-.textContainer {padding: 5vh 0;}
+.textContainer {padding: 1em 2em;}
 
-
-.flexContainer {
+.flex {
   display: flex;
+  justify-content: center;
+}
+.flexAlignCenter {
   align-items: center;
 }
-
-
 
 /* Animation Stuff */
 .fadeInUp {
@@ -83,13 +82,6 @@ a {color: blue;}
   animation: fadeInLeft 0.5s forwards;
   animation-delay: calc(var(--order)*250ms);
 }
-
-.order1 {--order:1;}
-.order2 {--order:2;}
-.order3 {--order:3;}
-.order4 {--order:4;}
-.order5 {--order:5;}
-
 
 @keyframes fadeInUp {
   from {
@@ -111,8 +103,8 @@ a {color: blue;}
     transform: translateX(0);
   }
 }
-
+/* PC */
 @media only screen and (min-width:768px) {
-  main {padding: 0vh 2.5vw;}
+  main {padding: 0vh 5vw;}
   .easyRead {max-width: 60vw;}
 }

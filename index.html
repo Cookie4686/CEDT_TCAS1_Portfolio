@@ -26,14 +26,6 @@
     color:white;
     background-image:linear-gradient(#898989 20%,var(--bgColor));
   }
-  .educationRecord img {
-    width: 30vw;
-    max-height: 33vh;
-    object-fit: contain;
-  }
-  .educationRecord p {
-    padding-left: 5vw;
-  }
   .linebreak {
     padding: 2.5vh 0;
   }
@@ -41,7 +33,26 @@
     content: ": ";
   }
   
-
+  .slideContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+  }
+  .slide {display: none;}
+  .showSlide {display: flex;}
+  .slide img {
+    width: 33%;
+    max-height: 80%;
+    object-fit: contain;
+  }
+  .slideDescription {
+    width: 60%;
+    height: 25vh;
+  }
+  .prevSlide , .nextSlide {
+    margin: 0 1em;
+  }
 </style>
 
 
@@ -101,38 +112,37 @@
   </nav>
 
   <header>
-    <h1 class="large fadeInUp">
-      Welcome <span class="small sub">To</span>
+    <h1 class="fadeInUp large">
+      Welcome
+      <span class="small sub">To</span>
       <br>My Portfolio
     </h1>
-    <div class="textContainer big1">
-      <p class="fadeInLeft order2 noMargin big1 tab">โครงการผู้มีความสามารถด้านวิชาการ</p>
-      <p class="fadeInLeft order3 noMargin">คณะวิศวกรรมศาสตร์ หลักสูตรวิศวกรรมศาสตรบัณฑิต</p>
-      <p class="fadeInLeft order4 noMargin">สาขาวิชาวิศวกรรมคอมพิวเตอร์และเทคโนโลยีดิจิทัล</p>
-      <p class="fadeInLeft order5 noMargin big2">จุฬาลงกรณ์มหาวิทยาลัย</p>
+    <div class="big1">
+      <p class="fadeInLeft noMargin big2" style="--order:2;">โครงการผู้มีความสามารถด้านวิชาการ</p>
+      <p class="fadeInLeft noMargin" style="--order:3;">คณะวิศวกรรมศาสตร์ หลักสูตรวิศวกรรมศาสตรบัณฑิต</p>
+      <p class="fadeInLeft noMargin" style="--order:4;">สาขาวิชาวิศวกรรมคอมพิวเตอร์และเทคโนโลยีดิจิทัล</p>
+      <p class="fadeInLeft noMargin big2" style="--order:5;">จุฬาลงกรณ์มหาวิทยาลัย</p>
     </div>
   </header>
 
   <main>
     <section>
       <h2>คำนำ</h2>
-      <p class="easyRead noMargin">
-        <span class="tab"></span>สวัสดีครับ ผมนายศิวพัฒิ สวัสดิชัย
-        ขอกล่าวยินดีต้อนรับ และขอขอบคุณทุกๆท่านที่สละเวลามาชมเว็บไซต์ Portfolio ของผม
-        เว็บไซต์นี้ได้ถูกจัดทำขึ้นด้วยความพยายามของตัวผม ในการออกแบบโครงร่าง 
-        การเขียนเว็บขึ้นมา และจนกระทั่งผลงานเสร็จสิ้น หากท่านต้องการทราบข้อมูลเพิ่มเติมเกี่ยวกับเว็บไซต์นี้
-        ท่านสามารถเข้าดูได้โดยการกด<a href="" title="เกี่ยวกับเว็บไซต์นี้">ที่นี่</a>
-        ผมหวังว่าท่านจะได้รับประสบการณ์ที่ดีบนเว็บไซต์นี้ หากท่านมีข้อเสนอแนะเพิ่มเติม
-        ท่านสามารถติดต่อได้ผ่าน<a href="" title="กดเพื่อไปด้านล่างของหน้าเว็บ">ช่องทางการติดต่อท้ายหน้าเว็บ</a>
-        โดยผมเองนั้นพร้อมที่จะรับฟังความคิดเห็นของท่าน เพื่อจะได้นำมาพัฒนาตัวผมเองได้ต่อไป
+      <p class="noMargin easyRead">
+        สวัสดีครับ ข้าพเจ้านายศิวพัฒิ สวัสดิชัย ขอยินดีต้อนรับและขอขอบคุณทุกๆท่าน ที่สละเวลามาชมเว็บไซต์สะสมผลงานของข้าพเจ้า
+        เว็บไซต์นี้ได้ถูกจัดทำขึ้นด้วยความสามารถของข้าพเจ้าเอง ในการออกแบบโครงร่าง 
+        การเขียนเว็บไซต์ขึ้นมา และจนกระทั่งผลงานเสร็จสิ้น หากท่านต้องการทราบข้อมูลเพิ่มเติมเกี่ยวกับเว็บไซต์นี้
+        ท่านสามารถเข้าดูได้โดยการกด<a href="th/About.html" title="เกี่ยวกับเว็บไซต์นี้">ที่นี่</a>
+        สุดท้ายนี้ผมหวังว่าท่านจะได้รับประสบการณ์ที่ดี และหากท่านมีข้อเสนอแนะเพิ่มเติม ท่านสามารถติดต่อได้ผ่านช่องทางการติดต่อท้ายหน้าเว็บไซต์
+        โดยข้าพเจ้าพร้อมรับฟังความคิดเห็นของทุกๆท่าน เพื่อจะนำมาพัฒนาตัวข้าพเจ้าในอนาคตได้ต่อไป
       </p>
     </section>
 
-    <section>
+    <section> <!-- Picture Needed -->
       <h2>แนะนำตนเอง</h2>
-      <div class="personalInfo flexContainer">
-        <img src="/Images/MySelf.png" style="max-width: 33vw;max-height: 60vh;">
-        <table>
+      <div class="flex personalInfo">
+        <img src="Images/MySelf.png" draggable="false" style="max-width: 33vw;max-height: 60vh;padding: 0 5vw;">
+        <table class="textContainer">
           <tbody>
             <tr>
               <td>ชื่อ-สกุล</td>
@@ -163,28 +173,27 @@
       </div>
     </section>
 
-
-    <section class="educationRecord">
+    <section> <!-- Information Needed -->
       <h2>ประวัติการศึกษา</h2>
-      <div class="flexContainer">
-        <img src="Images/SCA_logo.png" draggable="false"/>
-        <p>
+      <div class="flex flexAlignCenter">
+        <img src="Images/SCA_logo.png" draggable="false" style="width: 30vw;max-height: 25vh;object-fit: contain;"/>
+        <p class="textContainer">
           <span>โรงเรียนสามมุกคริสเตียนวิทยา</span>
           <br><span class="tab small1">ชั้นมัธยมศึกษาปีที่ 1-3</span>
           <br>
           <br>แผนการเรียน: วิทย์-คณิต
-          <br>GPAX:
+          <br>GPAX: 3.81
         </p>
       </div>
       <div class="linebreak"></div>
-      <div class="flexContainer">
-        <img src="Images/SCA_logo.png" draggable="false"/>
-        <p>
+      <div class="flex flexAlignCenter">
+        <img src="Images/SCA_logo.png" draggable="false" style="width: 30vw;max-height: 25vh;object-fit: contain;"/>
+        <p class="textContainer">
           <span>โรงเรียนสามมุกคริสเตียนวิทยา</span>
           <br><span class="tab small1">ชั้นมัธยมศึกษาปีที่ 4-6</span>
           <br>
           <br>แผนการเรียน: วิทย์-คณิต
-          <br>GPAX:
+          <br>GPAX 5:
         </p>
       </div>
     </section>
@@ -192,34 +201,120 @@
     <section>
       <h2>เหตุผลที่สนใจเข้าศึกษา</h2>
       <p class="easyRead">
-        <span class="tab"></span>เหมือนกับผู้คนส่วนมาก ผมได้ใช้เวลาอยู่กับเทคโนโลยีต่างๆอยู่ตลอด         แต่ผมก็เป็นเพียงแค่ผู้ใช้งาน (User) เท่านั้น แต่ผมก็อยากที่จะสร้างผลงานดีๆขึ้นมาบ้าง  จนเมื่อผมอยู่ในชั้นม.ปลาย ผมก็ค้นพบโอกาสที่จะเป็นผู้พัฒนา (Dev) ขึ้นมา
+        <span class="tab"></span>ในฐานะผู้ใช้งาน (User) ผมได้ใช้เทคโนโลยีต่างๆอยู่ทุกวันทำให้ผมมีความคุ้นชินในเทคโนโลยีที่ใช้ และมีความใฝ่ฝันที่จะลองสร้างสรรค์ผลงานเพื่อสังคมของตนเองขึ้นมาดูบ้าง
         <br>
-        <span class="tab"></span>ผมสังเกตเห็นปัญหาหลายรูปแบบในชีวิตประจำวัน  โรงเรียน และประเทศชาติ โดยที่ปัญหาเหล่านั้นบางส่วนก็เกิดจากการนำเทคโนโลยีมาใช้อย่างผิดๆ และปัญหาบางส่วนก็สามารถจะแก้ไขได้ด้วยการประยุกต์ใช้เทคโนโลยี 
+        <span class="tab"></span>เมื่อผมอยู่ในชั้นม.ปลายผมสังเกตเห็นปัญหาต่างๆในชีวิตประจำวัน ของผม ในโรงเรียน และในประเทศชาติ โดยปัญหาเหล่านั้นบางส่วนสามารถนำเทคโนโลยีมาใช้แก้ปัญหาได้ เช่น การลดต้นทุนในการดำเนินงาน การเพิ่มประสิทธิภาพในการทำงานด้วยการใช้เทคโนโลยี เป็นต้น
         <br>
-        <span class="tab"></span>จากความชอบของผมในด้านเทคโนโลยี บทบาทของเทคโนโลยีที่มีมากขึ้นเรื่อยๆ และหลังจากเปรียบเทียบแต่ละหลักสูตรในแต่ละมหาวิทยาลัย ผมจึงได้ตัดสินใจที่จะเข้าศึกษาในจุฬาลงกรณ์มหาวิทยาลัย หลักสูตร CEDT เนื่องจากหลักสูตรมีความน่าสนใจ มีการฝึกงานในภาคฤดูร้อน ได้นำความรู้ที่เรียนไปใช้จริงซึ่งเป็นเหตุผลหลักของผมครับ
-      </p>
+        <span class="tab"></span>จากบทบาทของเทคโนโลยีที่มีมากขึ้นเรื่อยๆ และความรักในด้านนี้    ผมจึงตัดสินใจที่จะเข้าศึกษาในหลักสูตร  CEDT คณะวิศวกรรมศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย เนื่องจากเนื้อหาหลักสูตรมีความน่าสนใจและทันสมัย มีการฝึกงานในภาคฤดูร้อนซึ่งทำให้ผมได้นำความรู้เหล่านั้นไปลองใช้จริง
+        <br>
+        <span class="tab"></span>โดยเมื่อเข้าศึกษาแล้ว ผมจะพัฒนาตนเองในทุกด้านอยู่เสมอ และจะนำความรู้ที่ได้ไปช่วยเหลือสังคม และทำประโยชน์ให้แก่ประเทศชาติ บ้านเมือง ตามความสามารถที่ผมมีอยู่ต่อไป      </p>
     </section>
 
-    <section>
+    <section> <!-- Improve This -->
       <h2>ประกาศนียบัตรที่ได้รับ</h2>
-      <!-- ใช้เป็น กรอบเลื่อนเกียรติบัตรซ้ายขวา มีคำอธิบายอยู่ข้างๆ เหมือนในหลายๆ web ที่เคยเห็น -->
+      <div class="slideContainer">
+        <button class="prevSlide" onclick="ShowSlide(-1)" style="color: var(--textColor);">&#10094;</button>
+        <div class="slide">
+          <img src="Certificates/RSU_Rookie_Game_Dev.jpeg"/>
+          <div class="slideDescription textContainer">
+            <div class="bold">RSU Rookie Game Dev 2022</div>
+            <p>
+              การอบรมออนไลน์ ในหลักสูตรพัฒนาเกมเบื้องต้นด้วยโปรแกรม Unity 
+              <br>จัดโดย สาขาคอมพิวเตอร์เกมและอีสปอร์ต วิทยาลัยนวัตกรรมดิจิทัลเทคโนโลยี มหาวิทยาลัยรังสิต
+              <br>ในช่วงวันที่ 9 กรกฎาคม - 6 สิงหาคม 2565
+            </p>
+          </div>
+        </div>
+          
+        <div class="slide">
+          <img src="Certificates/Gamer_to_Coder.jpg"/>
+          <div class="slideDescription textContainer">
+            <div class="bold">Gamer to Coder 2022</div>
+            <p>
+              การอบรมออนไลน์ ในหลักสูตรการออกแบบและพัฒนาเว็บไซต์
+              <br>จัดโดย กระทรวงศึกษาธิการ และ การีนา ออนไลน์ (ประเทศไทย)
+              <br>ในช่วงเดือนตุลาคม พ.ศ. 2565 เป็นเวลารวมทั้งหมด 10 วัน วันละ 2 ชม.
+            </p>
+          </div>
+        </div>
+    
+        <div class="slide">
+          <img src="Certificates/Bangmod_Hackathon.png"/>
+          <div class="slideDescription textContainer">
+            <div class="bold">Bangmod Hackathon 2023</div>
+            <p>
+              การแข่งขันแก้ไขปัญหาด้วยการเขียนโปรแกรมคอมพิวเตอร์
+              <br>จัดโดย คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี
+              <br>ในวันที่ 24 ธันวาคม พ.ศ. 2565
+            </p>
+          </div>
+        </div>
+       <button class="nextSlide" onclick="ShowSlide(1)" style="color: var(--textColor);">&#10095;</button>
+      </div>
     </section>
 
-    <section>
-      <h2>จุดอ่อน และ จุดแข็ง</h2>
-      <!-- ใช้เป็น ตารางปกติก็น่าจะได้-->
+    <section> <!-- Do This -->
+      <h2>จุดแข็ง และ จุดอ่อน</h2>
+      <table class="textContainer center" style="width: 80%;margin: 0 auto;">
+        <tbody>
+          <tr>
+            <th>จุดแข็ง</th>
+            <th>จุดอ่อน</th>
+          </tr>
+          <tr>
+            <td>รักในการเรียนรู้สิ่งใหม่ๆเสมอ</td>
+            <td>บริหารเวลาที่มีอยู่ได้ไม่ดีนัก</td>
+          </tr>
+          <tr>
+            <td>มีความมุ่งมั่น ไม่ล้มเลิกง่ายๆ</td>
+            <td>ไม่ชอบและกลัวการเปลี่ยนแปลง</td>
+          </tr>
+        </tbody>
+      </table>
     </section>
 
   </main>
 
-  <footer style="height: 50vh;" id="footer">
+  <footer class="center" id="footer">
     <div class="navLink">
       <a href="">Home</a>
-      <a href="th/Biography/">Biography</a>
-      <a href="th/MySkills/">My Skills</a>
+      <a href="th/Biography.html">Biography</a>
+      <a href="th/MySkills.html">My Skills</a>
+      <div class="navLanguage">
+        <a href="/EN/">EN</a>
+        <a>TH</a>
+      </div>
     </div>
+      <p class="noMargin">
+        เว็บไซต์นี้ใช้งานได้ดีบนเครื่องคอมพิวเตอร์
+        <br>ด้วยโปรแกรม Google Chrome เวอร์ชั่นล่าสุด
+        <br>ที่มีการเปิดใช้งาน Javascript
+        <br><a href="th/About.html" style="font-size: 0.75em;color: blue;text-decoration: underline;">เกี่ยวกับเว็บไซต์นี้</a>
+      </p>
+      <p class="textContainer noMargin">
+        เว็บไซต์นี้ถูกทำโดยนายศิวพัฒิ สวัสดิชัย
+        <br>หากท่านมีข้อเสนอแนะเพิ่มเติม สามารถติดต่อได้ทาง
+        <br><span style="text-decoration: underline;">Email: cookieandcake1105@gmail.com</span>
+      </p>
   </footer>
 </body>
 
 <script defer src="Components/NavBar.js"></script>
+
+<script>
+  let slides = document.getElementsByClassName('slide');
+  let currentIndex = 0;
+  ShowSlide(currentIndex);
+  function ShowSlide(n) {
+      slides[currentIndex].classList.remove('showSlide');
+      if (currentIndex + n >= slides.length) {
+        currentIndex = 0;
+      }else if(currentIndex + n < 0){
+        currentIndex = slides.length - 1;
+      }else {
+        currentIndex += n;
+      }
+      slides[currentIndex].classList.add('showSlide');
+    }
+</script>
 </html>
