@@ -8,8 +8,17 @@
   --textColor : #F1F1F1;
   --navBgColor: #DB5F8E;
 }
-footer,nav {
-  background-color: var(--navBgColor);
+footer,nav {background-color: var(--navBgColor);}
+nav a , footer a{
+  color: var(--navTextColor);
+  text-decoration: none;
+  text-align: center;
+  font-family: sans-serif, Arial, Helvetica;
+  font-size: 1.2em;
+  padding: 0px 0.5em;
+}
+.navLanguage a {
+  font-size: 0.8em;
 }
 
 /* TopNavigation */
@@ -24,57 +33,57 @@ nav {
   top: 0px;
   z-index: 1;
 }
+nav a:hover{
+  background-color: var(--navTextColor);
+  color: var(--navBgColor);
+}
+nav.navOpened {
+  padding-top: 10vh;
+  height: 100%;
+  transition: 0.3s;
+} 
+
 .topLogo {
   position: absolute;
   top:0;
   float: left;
   padding: 1vh 0.5em;
 }
-
-nav a {
-  color: var(--navTextColor);
-  text-decoration: none;
-  text-align: center;
-  font-family: sans-serif, Arial, Helvetica;
-  font-size: clamp(2vh,4vw,4.5vh);
-  padding: 0px 0.5em;
+.navExtra,nav .navLink a {
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  display: none;
 }
-nav a:hover {
-  background-color: var(--navTextColor);
-  color: var(--navBgColor);
-}
+.navOpened .navLink a {float:none;display:block;padding: 2vh 0;}
+.navOpened #navContact {display: none;}
 .navExtra {
   height: 8vh;
   float: right;
 }
-.navLanguage {
-  display: block;
+.navOpened .navExtra {display: block; float: none;}
+
+nav .navLanguage , nav .navLanguage a {
   float: right;
 }
-.navLanguage a {
-  display: inline;
-  float: right;
-  font-size: clamp(1.5vh,3vw,3.375vh);
-}
-.navExtra,.navLink a {
-  padding-top: 1vh;
-  padding-bottom: 1vh;
-}
+
 button {
   cursor: pointer;
   padding: 0;
   border: 0;
   background-color: transparent;
 }
-button:focus,button:visited,button:active{
+nav button:focus,nav button:visited,nav button:active{
   outline: none;
   -webkit-tap-highlight-color: transparent;
 }
-#darkModeMenu {
-  padding: 1vh 0.5em;
-}
+#darkModeMenu {padding: 1vh 0.5em;}
 #darkModeMenuBG {fill: var(--bgColor)}
 #darkModeMenuBG,#darkModeSelector {transition: 0.3s;}
+.darkMode #darkModeSelector {transform: translateX(50%);}
+.darkModeSun {fill: white; transition: 0.3s;}
+.darkModeMoon {fill: black;}
+.darkMode .darkModeMoon {fill: white;}
+
 
 .navMenuIcon {
   position: absolute;
@@ -93,55 +102,33 @@ button:focus,button:visited,button:active{
 #MenuIconBar1 {top: 0;}
 #MenuIconBar2 {top: 42.5%;}
 #MenuIconBar3 {top: 85%;}
-
-.navLink a {display: none;}
-.navExtra {display: none;}
-
-
-.darkMode #darkModeSelector {transform: translateX(50%);}
-.darkModeSun {fill: white; transition: 0.3s;}
-.darkModeMoon {fill: black;}
-.darkMode .darkModeMoon {fill: white;}
-
-nav.navOpened {transition: 0.3s;} 
-.navOpened .navHideIcon {display: none;}
-.navOpened {padding-top: 10vh; height: 100%;}
-.navOpened .navExtra {display: block; float: none;}
-.navOpened .navLink a {float: none; display: block;padding: 2vh 0;}
-.navOpened #navContact {display: none;}
-
 .navOpened #MenuIconBar1{top: 50%; transform: rotate(-45deg);}
 .navOpened #MenuIconBar2 {opacity: 0;}
 .navOpened #MenuIconBar3 {top: 50%; transform:rotate(45deg);}
 
-
 @media only screen and (min-width:768px) {
-  .navMenuIcon {display: none;}
-  nav .topLogo {
-    position: static;
-    max-width: 15vw;
-    max-height: 6vh;
-  }
+  #topNav {padding-top: 0; height: 8vh;}
+  nav .topLogo {position: static;}
   #topNav a {
-    display: inline-block;
-    font-size: clamp(1.25vh,2.5vw,2.8vh);
+    display: inline;
+    font-size: 0.9em;
   }
   #topNav .navLink a {float: left;}
   #topNav #navContact {float: right;}
-  #topNav .navLanguage a {font-size: clamp(1vh,2vw,2.25vh);}
-  #topNav {padding-top: 0; height: 8vh;}
   #topNav .navExtra{display: block; float: right;}
-  #topNav .navExtra , #topNav .navLink a {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-  #navContact {float: right;}
-  #darkModeMenu {
-    max-width: 10vw;
-    max-height: 6vh;
-  }
+  #topNav .navExtra , #topNav .navLink a {padding: 0 0.5em;}
+
   .darkMode .darkModeSun {fill: black;} 
   .darkMode #darkModeMenu:hover .darkModeSun {fill: white;}
+  
+  .navMenuIcon {display: none;}
 }
-/* Footer Navigation */
 
+/* Footer Navigation */
+footer {
+  margin-top: 20vh;
+  color: var(--TextColor);
+  font-size: 0.8em;
+}
+footer div {padding: 1em 2.5%;}
+footer .navLanguage a , footer .navLink a{font-size: 0.9em;}
