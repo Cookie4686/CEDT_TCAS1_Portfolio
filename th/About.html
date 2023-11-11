@@ -1,117 +1,43 @@
 <!DOCTYPE html>
 <html lang="th-th">
 <head>
-  <Title>About this website</title>
-    <link rel="stylesheet" href="../Components/NavBar.css">
-    <link rel="stylesheet" href="../Components/Portfolio.css">
   <meta charset="UTF-8">
-  <meta name="description" content="About Sivaphat's Website">
-  <meta name="author" content="Sivaphat Sawatdichai">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"content="About Sivaphat's Website">
+  <meta name="author"content="Sivaphat Sawatdichai">
+  <meta name="viewport"content="width=device-width, initial-scale=1">
+  <Title>About this website</title>
+  <script>if(sessionStorage.getItem("theme")=='dark')document.documentElement.setAttribute('data-theme','dark');</script>
+  <link rel="icon"type="image/x-icon"href="/images/favicon-32x32.png">
+  <link rel="stylesheet"href="../Components/NavBar.css">
+  <link rel="stylesheet"href="../Components/Portfolio.css">
 </head>
-
-<style>
-  h3 {
-    margin-bottom: 0;
-
-  }
-  main p {
-    margin: 0 auto; 
-    max-width: 75vw;
-    text-align: justify;
-    line-height: 1.75em;
-  }
-</style>
-
 
 <body>
   <nav id="topNav">
-    <svg class="topLogo" height="6vh" viewBox="0 0 300 100" fill="none">
-      <g stroke="white" stroke-width="4px">
-        <polyline points="40,0 0,30 40,50 0,80"/> <!--S-->
-        <line x1="50" y1="40" x2="50" y2="80"/> <!--i-->
-        <polyline points="60,40 75,80 90,40"/> <!--v-->
-        <polyline points="130,60 115,80 100,60 115,40 140,80"/> <!--1st a-->
-        <polyline points="150,60 165,80 180,60 165,40 150,60 150,100 140,90 190,80"/> <!--p-->
-        <line x1="190" y1="80" x2="190" y2="10"/> <!--long h part-->
-        <polyline points="190,50 200,40 210,50 210,80"/> <!--other h part-->
-        <polyline points="250,60 235,80 220,60 235,40 260,80"/> <!--2nd a-->
-        <line x1="270" y1="80" x2="270" y2="10"/> <!--long t part-->
-        <line x1="255" y1="30" x2="285" y2="30"/> <!--horizontal t part-->
-      </g>
-    </svg>
-    <div class="navExtra">
-      <button onclick="darkMode()">
-        <svg id="darkModeMenu"  height="6vh" viewBox="0 0 200 100" fill="none">
-          <rect id="darkModeMenuBG" width="200" height="100" rx="45"/>
-          <circle id="darkModeSelector" cx="50" cy="50" r="40" fill="#0D99FF"/>
-          <g class="darkModeSun">
-            <circle cx="50" cy="50" r="17.5"/>
-            <g>
-              <path d="M50 25 L55 34 H45 L50 25 Z"/>
-              <path d="M33 34 L41 36 L35 42 L33 34 Z"/>
-              <path d="M25 50 L34 45 L34 55 L25 50 Z"/>
-              <path d="M33 66 L35 58 L41 64 L33 66 Z"/>
-              <path d="M45 66 L54 67 L50 75 L45 66 Z"/>
-              <path d="M59 65 L65 59 L67 67 L59 65 Z"/>
-              <path d="M66 45 L75 50 L66 55 L66 45"/>
-              <path d="M59 36 L67 34 L65 42 L59 36 Z"/>
-            </g>
-          </g>
-          <path class="darkModeMoon" d="M172.5 57 C169 70 155 78 142 75 C128.5 71 147 76 153 52 C160 28 141 23 155 26 C168 30 176 43.5 172.5 57 Z"/>
-        </svg>
-      </button>
-      <div class="navLanguage">
-        <a>TH</a>
-        <a href="/EN/">EN</a>
-      </div>
+    <svg class="topLogo"height="6vh"viewBox="0 0 300 100"fill="none"stroke="white"stroke-width="4px"><polyline points="40,0 0,30 40,50 0,80"/><line x1="50"y1="40"x2="50"y2="80"/><polyline points="60,40 75,80 90,40"/><polyline points="130,60 115,80 100,60 115,40 140,80"/><polyline points="150,60 165,80 180,60 165,40 150,60 150,100 140,90 190,80"/><line x1="190"y1="80"x2="190"y2="10"/><polyline points="190,50 200,40 210,50 210,80"/><polyline points="250,60 235,80 220,60 235,40 260,80"/><line x1="270"y1="80"x2="270"y2="10"/><line x1="255"y1="30"x2="285"y2="30"/></svg>
+    <div class="navExtra"><button onclick="darkMode()"><svg id="darkModeMenu"height="6vh"viewBox="0 0 200 100"fill="none"><rect id="darkModeMenuBG"width="200"height="100"rx="45"/><circle id="darkModeSelector"cx="50"cy="50"r="40"fill="#0D99FF"/><g class="darkModeSun"><circle cx="50"cy="50"r="17.5"/><path d="M50 25 L55 34 H45 L50 25 Z"/><path d="M33 34 L41 36 L35 42 L33 34 Z"/><path d="M25 50 L34 45 L34 55 L25 50 Z"/><path d="M33 66 L35 58 L41 64 L33 66 Z"/><path d="M45 66 L54 67 L50 75 L45 66 Z"/><path d="M59 65 L65 59 L67 67 L59 65 Z"/><path d="M66 45 L75 50 L66 55 L66 45"/><path d="M59 36 L67 34 L65 42 L59 36 Z"/></g><path class="darkModeMoon"d="M172.5 57 C169 70 155 78 142 75 C128.5 71 147 76 153 52 C160 28 141 23 155 26 C168 30 176 43.5 172.5 57 Z"/></svg></button>
+      <div class="navLanguage"><a>TH</a><a href="/EN/">EN</a></div>
     </div>
-    <div class="navLink">
-      <a href="../">Home</a>
-      <a href="Biography.html">Biography</a>
-      <a href="MySkills.html">My Skills</a>
-      <a href="#footer" id="navContact">Contact</a>
-    </div>
-    <button class="navMenuIcon" onclick="openNav()">
-      <div id="MenuIconBar1"></div>
-      <div id="MenuIconBar2"></div>
-      <div id="MenuIconBar3"></div>
-    </button>
+    <div class="navLink"><a href="../">Home</a><a href="Biography.html">Biography</a><a href="MySkills.html">My Skills</a><a href=""id="navAbout">About</a></div>
+    <button class="navMenuIcon"onclick="openNav()"><div id="MenuIconBar1"></div><div id="MenuIconBar2"></div><div id="MenuIconBar3"></div></button>
   </nav>
   <header></header>
 
   <main>
     <section>
-      <h2 class="center">แผนผังเว็บไซต์</h2>
-    </section>
-    <section>
       <h2 class="center">ที่มาของเว็บไซต์</h2>
-      <p class="justify">
-        <span class="tab"></span>ในตอนม.5 ผมเคยได้ยินไอเดียที่ว่าถ้าจะเข้าวิศวะฯคอม ลองทำเป็นเว็บไซต์ส่งเขาไปสิ ผมก็ยังไม่แน่ใจว่าจะทำดีไหม แล้วจะเข้าวิศวะจริงๆป่าว แต่พอผมอยู่ในชั้นม.6 ผมก็ได้ตัดสินใจแล้วว่าจะเข้าเรียนวิศวะฯหลักสูตร CEDT แต่ผมก็ไม่มีผลงานอะไรโดดเด่นเลย และผมก็ไม่อยากจะสอบ A-level ด้วย ดังนั้นผมก็เริ่มต้นทำเว็บไซต์นี้มาตั้งแต่ปลายเดือน มิ.ย. ปี 2566 เพื่อจะได้มีผลงานขึ้นมาพิสูจน์ตัวเองบ้าง และหวังว่าเว็บนี้จะเพิ่มโอกาสให้ผมที่จะผ่านเข้ารอบนี้ไปได้ เพื่อที่ผมจะได้มีเวลาไปทำ side-project อื่นๆที่ผมสนใจต่อไปในอนาคต
-      </p>
+      <p class="easyRead"><span class="tab"></span>ในตอนม.5 ผมเคยได้ยินความคิดที่ว่าถ้าจะเข้าคณะเกี่ยวกับคอม ลองทำเป็นเว็บไซต์ส่งเขาไปสิ ผมก็ยังไม่แน่ใจว่าจะทำดีไหม แต่พอผมอยู่ในชั้นม.6 ผมก็ได้ตัดสินใจแล้วว่าจะเข้าเรียนวิศวะฯหลักสูตร CEDT แต่ผมก็ไม่มีผลงานอะไรโดดเด่นเลย แต่ว่าผมก็ต้องการที่จะเข้าในรอบนี้ ดังนั้นผมจึงเริ่มต้นทำเว็บไซต์นี้มาตั้งแต่ปลายเดือน มิ.ย. ปี&nbsp;2566 เพื่อจะได้มีผลงานขึ้นมาพิสูจน์ตัวเองบ้าง และหวังว่าเว็บไซต์นี้ช่วยให้ผมที่จะผ่านเข้ารอบนี้ไปได้ เพื่อที่ผมจะได้ใช้เวลาที่ได้มาเพิ่มจากการที่ไม่ต้องเตรียมสอบไปเรียนรู้ในด้านต่างๆ และทำ side-project อื่นๆที่ผมสนใจในอนาคตได้ต่อไป</p>
     </section>
-    <section>
+    <section class="easyRead">
       <h2 class="center">ขั้นตอนการทำ</h2>
-      <p><span class="bold tab">ปลายเดือนมิ.ย. - เดือนก.ค.</span><br>
-        ในช่วงแรกของการทำเว็บไซต์ ผมนั้นยังไม่ได้มีเนื้อหา แผนผังเว็บไซต์ว่าจะใส่อะไรลงไปบ้าง ผมเลยเริ่มทำจากแถบเมนูด้านบนก่อน (Navigation Bar) โดยผมทำเป็นแบบ Responsive แบบง่ายๆ ในคอมเป็นแถบด้านบน ในมือถือเป็นแถบด้านข้าง ที่มีปุ่มเมนูไว้กดเปิด และผมก็ทำในส่วนหัวของเว็บไซต์ (Header) ซึ่งมีข้อความต้อนรับ หลักสูตร และอื่นๆเหมือนที่ทำในแฟ้มสะสมผลงานแบบ A4
-      </p>
-      
-      <p><span class="bold tab">เดือน ส.ค.</span><br>
-        ในช่วงนี้ผมก็พยายามทำให้โค้ดของผมอ่านง่าย ใช้บรรทัดน้อยลง เพิ่มส่วนของการแนะนำตนเอง ประวัติการศึกษา ทักษะความสามารถ และใส่ Animation ให้แต่ละส่วนเมื่อผู้ใช้เลื่อนจอลงมาเรื่อยๆ
-      </p>
-      
-      <p><span class="bold tab">เดือน ก.ย.</span><br>
-        ผมคิดว่า NavBar ที่มีอยู่ยังดูเฉยๆเกินไป ผมเลยทำการเพิ่มโหมดสว่าง/โหมดมืดเข้ามา เพิ่มโลโก้เข้ามาในด้านซ้ายบน และเปลี่ยนให้ในมือถือแถบ Navigation จะเป็นแบบเต็มจอแทน
-      </p>
-      
-      <p><span class="bold tab">ต้นเดือนต.ค.</span><br>
-        ในตอนนี้ผมปิดเทอมแล้วและทำแฟ้มสะสมผลงานแบบ A4 เกือบสมบูรณ์แล้ว ผมจึงคิดแผนผังเว็บไซต์ใหม่ให้เหมือนใน A4 แต่มีเนื้อหาที่ละเอียดขึ้น เริ่มวางแผนแบบดีๆขึ้นมา โดยมีการจดโน้ตไว้ว่าจะทำอะไรยังไงบ้าง และเริ่มวางไฟล์ต่างๆให้พร้อมกับการเผยแพร่เว็บไซต์จริงๆ
-      </p>
-      
-      <p><span class="bold tab">กลางเดือน ต.ค.</span><br>
-        ในวันที่ 18 ต.ค. มีการประกาศเกณฑ์แฟ้มสะสมผลงานออกมา ผมก็ปรับแก้ในส่วนของ A4 ให้ตรงตามเกณฑ์ และเตรียมเนื้อหาที่จะใส่เข้าไปในเว็บไซต์ โดยผมวางแผนว่าจะทำส่วนที่จำเป็นก่อน ส่วนเสริมหากทำไม่ทันก็ตัดทิ้งไปได้
-      </p>
-    
+      <p><span class="tab"></span>เว็บไซต์นี้เป็น Static Web Page ถูกสร้างขึ้นด้วยภาษา HTML , CSS และ JS ซึ่งไม่ได้ใช้ Framework และ AI ในการทำ เนื่องจากผมต้องการฝึกฝนจากพื้นฐานก่อน โดยคติในการทำหลักของผมคือ “Simple yet Elegant” ซึ่งผมจะเน้นให้เรียบง่ายแต่สวยงามตามสไตล์คล้ายๆ Minimalism เพราะผมไม่ได้มีทักษะการทำเว็บไซต์ให้สวยงามอลังการมากนัก โดยเว็บไซต์นี้ผมได้ใช้เวลาในการทำอยู่ประมาณ 4 เดือน ซึ่งมีรายละเอียดดังนี้</p>
+      <p><span class="bold tab">ปลายเดือนมิ.ย. - เดือนก.ค.</span><br>ในช่วงแรกของการทำเว็บไซต์ ผมยังไม่ได้มีเนื้อหาหรือแผนผังเว็บไซต์ว่าจะทำอะไรบ้าง ผมจึงเริ่มทำแถบเมนูด้านบนก่อน (Navigation Bar) ซึ่งผมทำเป็นแบบ Responsive แบบง่ายๆ สำหรับในคอมเป็นแถบด้านบน และในมือถือเป็นแถบด้านข้าง ที่มีปุ่มเมนูไว้กดเปิด ในส่วนหัวของเว็บไซต์ (Header) ก็จะมีข้อความต้อนรับ หลักสูตรและโครงการที่จะเข้า เหมือนในแฟ้มสะสมผลงานแบบ A4</p>
+      <p><span class="bold tab">เดือน ส.ค.</span><br>ในช่วงนี้ผมก็พยายามทำให้โค้ดของผมอ่านง่าย ใช้บรรทัดน้อยลง เพิ่มส่วนของการแนะนำตนเอง ประวัติการศึกษา ทักษะความสามารถ และใส่ Animation ให้แต่ละส่วนเมื่อผู้ใช้เลื่อนจอลงมาเรื่อยๆ (แต่ในส่วนอนิเมชั่นก็เอาออกตอนหลัง)</p>
+      <p><span class="bold tab">เดือน ก.ย.</span><br>ผมคิดว่า NavBar ที่มีอยู่ยังดูธรรมดาเกินไป ผมเลยทำการเพิ่มโหมดสว่าง/โหมดมืดเข้ามา เพิ่มโลโก้เข้ามาในแถบด้านซ้ายบน และเปลี่ยนให้แถบ Navigation ในมือถือเป็นแบบเต็มจอแทน</p>
+      <p><span class="bold tab">ต้นเดือนต.ค.</span><br>ในเดือนนี้เป็นช่วงปิดเทอมและผมก็ทำแฟ้มสะสมผลงานแบบ A4 ได้คร่าวๆแล้ว ผมจึงคิดแผนผังเว็บไซต์ใหม่ให้เหมือนใน A4 และเริ่มมีการวางแผนเป็นระบบระเบียบมากขึ้น โดยมีการจดโน้ตไว้ว่าจะทำอะไรยังไงบ้าง และเริ่มวางไฟล์ต่างๆให้พร้อมกับการเผยแพร่เว็บไซต์จริงๆ</p>
+      <p><span class="bold tab">กลางเดือน ต.ค.</span><br>ในวันที่ 18 ต.ค. มีการประกาศเกณฑ์แฟ้มสะสมผลงานออกมา ผมก็ปรับแก้ในส่วนของ A4 ให้ตรงตามเกณฑ์ และเตรียมเนื้อหาที่จะใส่เข้าไปในเว็บไซต์ ช่วงนี้ผมก็ใกล้เปิดเทอมแล้ว ผมจึงวางแผนว่าจะทำส่วนที่จำเป็นก่อน ส่วนเสริมหากทำไม่ทันก็ให้ตัดทิ้งไป</p>
+      <p><span class="bold tab">ปลายเดือน ต.ค. - พ.ย.</span><br>ในช่วงสุดท้ายที่ Deadline กำลังใกล้เข้ามาผมได้ทดสอบการเผยแพร่เว็บไซต์ พยายามเรียบเรียงเนื้อหาต่างๆที่ใช้ทั้งในเว็บไซต์และA4 และแปลเนื้อหาที่เรียบเรียงแล้วเป็นภาษาอังกฤษด้วย</p>
+
     </section>
   </main>
   <footer class="center" id="footer">

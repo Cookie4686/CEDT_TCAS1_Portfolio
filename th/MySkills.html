@@ -1,105 +1,105 @@
 <!DOCTYPE html>
 <html lang="th-th">
 <head>
-  <Title>Sivaphat's Skills</title>
-  <link rel="stylesheet" href="../Components/NavBar.css">
-  <link rel="stylesheet" href="../Components/Portfolio.css">
   <meta charset="UTF-8">
-  <meta name="description" content="Sivaphat's Skill Page">
-  <meta name="author" content="Sivaphat Sawatdichai">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"content="Sivaphat's Skills Page">
+  <meta name="author"content="Sivaphat Sawatdichai">
+  <meta name="viewport"content="width=device-width, initial-scale=1">
+  <Title>Sivaphat's Skills</title>
+  <script>if(sessionStorage.getItem("theme")=='dark')document.documentElement.setAttribute('data-theme','dark');</script>
+  <link rel="icon"type="image/x-icon"href="/images/favicon-32x32.png">
+  <link rel="stylesheet"href="../Components/NavBar.css">
+  <link rel="stylesheet"href="../Components/Portfolio.css">
 </head>
 
-<style>
-  .skillBar {
-    width: 100%;
-    background-color: #ddd;
-  }
-  .skillBarScore {
-    text-align: right;
-    padding: 10px 10px 10px 0;
-    color: white;
-    width: var(--score);
-    background-color: var(--barColor);
-  }
-</style>
-  
 <body>
   <nav id="topNav">
-    <svg class="topLogo" height="6vh" viewBox="0 0 300 100" fill="none">
-      <g stroke="white" stroke-width="4px">
-        <polyline points="40,0 0,30 40,50 0,80"/> <!--S-->
-        <line x1="50" y1="40" x2="50" y2="80"/> <!--i-->
-        <polyline points="60,40 75,80 90,40"/> <!--v-->
-        <polyline points="130,60 115,80 100,60 115,40 140,80"/> <!--1st a-->
-        <polyline points="150,60 165,80 180,60 165,40 150,60 150,100 140,90 190,80"/> <!--p-->
-        <line x1="190" y1="80" x2="190" y2="10"/> <!--long h part-->
-        <polyline points="190,50 200,40 210,50 210,80"/> <!--other h part-->
-        <polyline points="250,60 235,80 220,60 235,40 260,80"/> <!--2nd a-->
-        <line x1="270" y1="80" x2="270" y2="10"/> <!--long t part-->
-        <line x1="255" y1="30" x2="285" y2="30"/> <!--horizontal t part-->
-      </g>
-    </svg>
-    <div class="navExtra">
-      <button onclick="darkMode()">
-        <svg id="darkModeMenu"  height="6vh" viewBox="0 0 200 100" fill="none">
-          <rect id="darkModeMenuBG" width="200" height="100" rx="45"/>
-          <circle id="darkModeSelector" cx="50" cy="50" r="40" fill="#0D99FF"/>
-          <g class="darkModeSun">
-            <circle cx="50" cy="50" r="17.5"/>
-            <g>
-              <path d="M50 25 L55 34 H45 L50 25 Z"/>
-              <path d="M33 34 L41 36 L35 42 L33 34 Z"/>
-              <path d="M25 50 L34 45 L34 55 L25 50 Z"/>
-              <path d="M33 66 L35 58 L41 64 L33 66 Z"/>
-              <path d="M45 66 L54 67 L50 75 L45 66 Z"/>
-              <path d="M59 65 L65 59 L67 67 L59 65 Z"/>
-              <path d="M66 45 L75 50 L66 55 L66 45"/>
-              <path d="M59 36 L67 34 L65 42 L59 36 Z"/>
-            </g>
-          </g>
-          <path class="darkModeMoon" d="M172.5 57 C169 70 155 78 142 75 C128.5 71 147 76 153 52 C160 28 141 23 155 26 C168 30 176 43.5 172.5 57 Z"/>
-        </svg>
-      </button>
-      <div class="navLanguage">
-        <a>TH</a>
-        <a href="../EN/">EN</a>
-      </div>
+    <svg class="topLogo"height="6vh"viewBox="0 0 300 100"fill="none"stroke="white"stroke-width="4px"><polyline points="40,0 0,30 40,50 0,80"/><line x1="50"y1="40"x2="50"y2="80"/><polyline points="60,40 75,80 90,40"/><polyline points="130,60 115,80 100,60 115,40 140,80"/><polyline points="150,60 165,80 180,60 165,40 150,60 150,100 140,90 190,80"/><line x1="190"y1="80"x2="190"y2="10"/><polyline points="190,50 200,40 210,50 210,80"/><polyline points="250,60 235,80 220,60 235,40 260,80"/><line x1="270"y1="80"x2="270"y2="10"/><line x1="255"y1="30"x2="285"y2="30"/></svg>
+    <div class="navExtra"><button onclick="darkMode()"><svg id="darkModeMenu"height="6vh"viewBox="0 0 200 100"fill="none"><rect id="darkModeMenuBG"width="200"height="100"rx="45"/><circle id="darkModeSelector"cx="50"cy="50"r="40"fill="#0D99FF"/><g class="darkModeSun"><circle cx="50"cy="50"r="17.5"/><path d="M50 25 L55 34 H45 L50 25 Z"/><path d="M33 34 L41 36 L35 42 L33 34 Z"/><path d="M25 50 L34 45 L34 55 L25 50 Z"/><path d="M33 66 L35 58 L41 64 L33 66 Z"/><path d="M45 66 L54 67 L50 75 L45 66 Z"/><path d="M59 65 L65 59 L67 67 L59 65 Z"/><path d="M66 45 L75 50 L66 55 L66 45"/><path d="M59 36 L67 34 L65 42 L59 36 Z"/></g><path class="darkModeMoon"d="M172.5 57 C169 70 155 78 142 75 C128.5 71 147 76 153 52 C160 28 141 23 155 26 C168 30 176 43.5 172.5 57 Z"/></svg></button>
+      <div class="navLanguage"><a>TH</a><a href="/EN/">EN</a></div>
     </div>
-    <div class="navLink">
-      <a href="../">Home</a>
-      <a href="Biography.html">Biography</a>
-      <a href="">My Skills</a>
-      <a href="#footer" id="navContact">Contact</a>
-    </div>
-    <button class="navMenuIcon" onclick="openNav()">
-      <div id="MenuIconBar1"></div>
-      <div id="MenuIconBar2"></div>
-      <div id="MenuIconBar3"></div>
-    </button>
+    <div class="navLink"><a href="../">Home</a><a href="Biography.html">Biography</a><a href="">My Skills</a><a href="About.html"id="navAbout">About</a></div>
+    <button class="navMenuIcon"onclick="openNav()"><div id="MenuIconBar1"></div><div id="MenuIconBar2"></div><div id="MenuIconBar3"></div></button>
   </nav>
   
   <header></header>
 
   <main>
-    <section>
-      <h2>ทักษะทั่วไป</h2>
-      <p>เข้าใจมุมมองของผู้อื่น สามารถทำงานเป็นทีมได้</p>
-      <!-- <div class="skillBar">
-        <div class="skillBarScore" style="--score:60%;--barColor:red;">60%</div>
-      </div> -->
-      <p>มีความคิดสร้างสรรค์และคิดอย่างเป็นระบบ</p>
-      <p>มีความมุ่งมั่นในการเรียนรู้อยู่ตลอดเวลา</p>
+    <section class="justify">
+      <h2>การเรียนรู้ตลอดชีวิต</h2>
+      <p><span class="tab"></span>ในส่วนของการเรียนรู้ตลอดชีวิต หรือ Lifelong Learning เป็นส่วนสำคัญในชีวิตของผมมากๆ โดยในม.ปลายผมก็เรียนรู้ได้ในหลายๆด้านมาโดยตลอด ซึ่งในที่นี้ผมจะเน้นในส่วนที่เกี่ยวข้องกับด้านวิชาการและคอมพิวเตอร์ โดยมีดังนี้</p>
+      <p><span class="bold tab">ม.4</span><br>ในช่วงม.4 เทอมแรกเป็นการเรียนออนไลน์ ซึ่งก็มีสิ่งที่เบี่ยงเบนความสนใจในการเรียน ทำให้เกรดเฉลี่ยลดลงไปบ้าง แต่ผมก็ค่อยๆพัฒนาตัวเองมาเรื่อยๆ จนปัจจุบันผมสามารถที่จะแยกแยะสิ่งรบกวนต่างๆได้ดีขึ้น ทำให้ผมมีสมาธิและความมุ่งมั่นมากขึ้น โดยผมมั่นใจว่าถ้าได้เรียนออนไลน์อีก ผมจะทำได้ดีกว่าในอดีตที่ผ่านมา</p>
+      <p><span class="bold tab">ม.5</span><br>ในช่วงม.5 จะเป็นช่วงที่วุ่นวายมากเพราะผมก็ดำรงตำแหน่งสภานักเรียนในเทอมแรกและจะมีรุ่นพี่รุ่นน้องที่ชวนไปร่วมกิจกรรมต่างๆด้วย โดยในเดือนก.ค.&nbsp;-&nbsp;ส.ค. ปี 2565 ผมก็ได้เข้าอบรมโครงการ RSU Rookie Game Dev 2022  ซึ่งเป็นการพัฒนาเกมด้วยโปรแกรม Unity และเดือนส.ค.เดียวกันนั้นเอง ผมก็ได้แข่งขันตอบปัญหาทางวิทยาศาสตร์ที่ม.ราชมงคลตะวันออกซึ่งผมก็ได้รับรางวัลอันดับที่ 2 มาด้วย ในช่วงเดือนต.ค. ผมก็ได้เข้าอบรมโครงการ Gamer to Coder 2022 ซึ่งมีเนื้อหาเกี่ยวกับการพัฒนาเว็บไซต์เบื้องต้น แต่ในการอบรมครั้งนี้ผมยอมรับว่าผมค่อนข้างขี้เกียจ ทำให้ไม่ได้รับความรู้อย่างเต็มที่ และสุดท้ายในเดือนธ.ค. ผมก็เข้าร่วมการแข่งขัน Bangmod Hackathon 2023 ซึ่งผมก็ได้เรียนรู้ในการเขียนอัลกอริทึมและภาษา C เพิ่มเติม</p>
+      <p><span class="bold tab">ม.6</span><br>ในม.6 เป็นช่วงที่ผมเน้นในการเข้าศึกษาต่อมหาวิทยาลัย ผมก็ได้เรียนรู้ทักษะที่จำเป็นในอนาคต โดยเฉพาะด้านการเงินการลงทุนในต้นเทอมแรก ส่วนในช่วงปลายเทอมแรกและต้นเทอมสองผมก็เน้นทำเว็บไซต์สะสมผลงาน ได้เรียนรู้ในด้านวิศวกรรมศาสตร์และด้านคอมพิวเตอร์ และในช่วงปิดเทอมเดือน ก.ย. - ต.ค 2566 ที่ผ่านมานี้ ผมก็ได้รู้จักกับ Chula Mooc และ Cisco Skills for All ซึ่งก็เพิ่มทักษะความสามารถของผมมาอยู่เรื่อยๆจนถึงในปัจจุบัน</p>
+      <p>จะเห็นได้ว่าที่ผ่านมานั้น การเรียนรู้ตลอดชีวิต(Lifelong Learning) เป็นหนึ่งในปัจจัยสำคัญที่ทำให้ผมพัฒนาตัวเองอยู่เสมอ โดยปัจจุบันผมก็มีสมาธิและความมุ่งมั่น (Motivation) มากขึ้น ได้รู้จักกับตัวเองดีขึ้น (Self-Awareness) ผ่านทางการเรียนรู้ เพราะผมจะรู้ว่าผมชอบหรือไม่ชอบในด้านไหนจากการเรียนรู้นี้แหละ</p>
     </section>
 
-    <section>
-      <h2>การเรียนรู้อย่างต่อเนื่อง</h2>
-      <p>d
-      </p>
-    </section>
+    <section><h2 class="center">ประกาศนียบัตรที่ได้รับ</h2>
+      <div class="slideContainer">
+        <button class="prevSlide"onclick="ShowSlide(-1)">&#10094;</button>
+        <button class="nextSlide"onclick="ShowSlide(1)">&#10095;</button>
+        <div class="slide flex">
+          <img src="../Certificates/RSU_Rookie_Game_Dev.jpeg"/>
+          <div class="slideDescription textContainer">
+            <p class="bold">Rookie Game Dev 2022</p>
+            <p>การอบรมออนไลน์ การพัฒนาเกมเบื้องต้นด้วยโปรแกรม Unity<br>จัดโดย สาขาคอมพิวเตอร์เกมและอีสปอร์ต มหาวิทยาลัยรังสิต<br>ในช่วงวันที่ 9 กรกฎาคม - 6 สิงหาคม 2565</p>
+        </div></div>
+        <div class="slide flex">
+          <img src="../Certificates/Gamer_to_Coder.jpg"/>
+          <div class="slideDescription textContainer">
+            <p class="bold">Gamer to Coder 2022</p>
+            <p>การอบรมออนไลน์ การการออกแบบและพัฒนาเว็บไซต์<br>จัดโดย กระทรวงศึกษาธิการ และ การีนา ออนไลน์ (ประเทศไทย)<br>ในช่วงเดือนตุลาคม พ.ศ. 2565 เป็นเวลารวมทั้งหมด 10 วัน วันละ 2 ชม.</p>
+        </div></div>
+        <div class="slide flex">
+          <img src="../Certificates/Bangmod_Hackathon.png"/>
+          <div class="slideDescription textContainer">
+            <p class="bold">Bangmod Hackathon 2023</p>
+            <p>การแข่งขันแก้ไขปัญหาด้วยการเขียนโปรแกรมคอมพิวเตอร์<br>จัดโดย คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี<br>ในวันที่ 24 ธันวาคม พ.ศ. 2565</p>
+        </div></div>
+        <div class="slide flex">
+          <img src="../Certificates/Civil_Law.jpg">
+          <div class="slideDescription textContainer">
+            <p class="bold">Fundamental Principles of Civil Law</p>
+            <p>คอร์สเรียน หลักการพื้นฐานทางกฎหมายแพ่ง<br>โดย Chula MOOC<br>ในวันที่ 28 กันยายน พ.ศ. 2566</p>
+        </div></div>
+        <div class="slide flex">
+          <img src="../Certificates/Prototyping_Application.jpg">
+          <div class="slideDescription textContainer">
+            <p class="bold">Prototyping Applications</p>
+            <p>คอร์สเรียน การสร้างต้นแบบแอปพลิเคชันด้วย Figma<br>โดย Chula MOOC<br>ในวันที่ 29 กันยายน พ.ศ. 2566</p>
+        </div></div>
+        <div class="slide flex">
+          <img src="../Certificates/HRM.jpg">
+          <div class="slideDescription textContainer">
+            <p class="bold">HRM From Theories to Practices</p>
+            <p>คอร์สเรียน การบริหารทรัพยากรบุคคลสมัยใหม่<br>โดย Chula MOOC<br>ในวันที่ 30 กันยายน พ.ศ. 2566</p>
+        </div></div>
+        <div class="slide flex">
+          <img src="../Certificates/VIE.jpg">
+          <div class="slideDescription textContainer">
+            <p class="bold">Principles of Innovation and Entrepreneurship: VIE</p>
+            <p>คอร์สเรียน นวัตกรรมทางสัตวแพทย์<br>โดย Chula MOOC<br>ในวันที่ 09 ตุลาคม พ.ศ. 2566</p>
+        </div></div>
+        <div class="slide flex">
+          <img src="../Certificates/Understanding_FS.jpg">
+          <div class="slideDescription textContainer">
+            <p class="bold">Understanding Financial Statement</p>
+            <p>คอร์สเรียน การทำความเข้าใจงบการเงิน<br>โดย Chula MOOC<br>ในวันที่ 31 ตุลาคม พ.ศ. 2566</p>
+        </div></div>
+        <div class="slide flex">
+          <img src="../Certificates/Introduction_to_IoT.jpg">
+          <div class="slideDescription textContainer">
+            <p class="bold">Introduction to Internet of Things</p>
+            <p>คอร์สเรียน บทนำสู่อินเทอร์เน็ตแห่งสรรพสิ่ง<br>โดย Cisco Networking Academy<br>ในวันที่ 26 กันยายน พ.ศ. 2566</p>
+        </div></div>
+        <div class="slide flex">
+          <img src="../Certificates/Computer_Hardware_Basics.jpg">
+          <div class="slideDescription textContainer">
+            <p class="bold">Computer Hardware Basics</p>
+            <p>คอร์สเรียน พื้นฐานฮาร์ดแวร์คอมพิวเตอร์<br>โดย Cisco Networking Academy<br>ในวันที่ 02 ตุลาคม พ.ศ. 2566</p>
+        </div></div>
 
-    <section>
-      <h2>ผลงานอื่นๆ</h2>
+      </div>
     </section>
   </main>
 
@@ -128,4 +128,20 @@
 
 </body>
 <script defer src="../Components/NavBar.js"></script>
+<script>
+  let slides = document.getElementsByClassName('slide');
+  let currentIndex = 0;
+  ShowSlide(currentIndex);
+  function ShowSlide(n) {
+      slides[currentIndex].classList.remove('showSlide');
+      if (currentIndex + n >= slides.length) {
+        currentIndex = 0;
+      }else if(currentIndex + n < 0){
+        currentIndex = slides.length - 1;
+      }else {
+        currentIndex += n;
+      }
+      slides[currentIndex].classList.add('showSlide');
+    }
+</script>
 </html>
