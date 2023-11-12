@@ -9,7 +9,7 @@
   --navBgColor: #DB5F8E;
 }
 footer,nav {background-color: var(--navBgColor);}
-nav a , footer a{
+nav a , footer .navLink a{
   color: var(--navTextColor);
   text-decoration: none;
   text-align: center;
@@ -128,4 +128,4 @@ footer {
   font-size: 0.9em;
 }
 footer div {padding: 1em 2.5%;}
-footer .navLanguage a , footer .navLink a{font-size: 0.9em;}
+footer .navLink a{font-size: 0.9em;}

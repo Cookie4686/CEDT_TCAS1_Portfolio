@@ -83,8 +83,8 @@ a {color: blue;}
 }
 
 .prevSlide,.nextSlide{
-  height: 20vh;
-  margin-top: 13vh;
+  height: 15vh;
+  margin-top: 15vh;
   padding: 0.75em;
   background-color: #a4d5ff;
   color: black;

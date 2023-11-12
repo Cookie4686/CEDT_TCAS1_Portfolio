@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description"content="Welcome to Sivaphat's Portfolio">
+  <meta name="author"content="Sivaphat Sawatdichai">
+  <meta name="viewport"content="width=device-width,initial-scale=1">
+  <Title>Sivaphat's Portfolio</title>
+  <script>if(sessionStorage.getItem("theme")=='dark')document.documentElement.setAttribute('data-theme','dark');</script>
+  <link rel="icon"href="../Favicon/favicon.ico"sizes="48x48">
+  <link rel="apple-touch-icon"sizes="180x180"href="../Favicon/apple-touch-icon.png">
+  <link rel="manifest"href="../Favicon/site.webmanifest">
+  <link rel="stylesheet"href="../Components/NavBar.css">
+  <link rel="stylesheet"href="../Components/Portfolio.css">
+</head>
+
+<style>h1{padding:0 0 5vh 10vw;background:linear-gradient(135deg,#00ffff,#ff00ea,#DB5F8E);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent;}header{min-height:142vh;}</style>
+
+<body>
+  <nav id="topNav">
+    <svg class="topLogo"height="6vh"viewBox="0 0 300 100"fill="none"stroke="white"stroke-width="4px"><polyline points="40,0 0,30 40,50 0,80"/><line x1="50"y1="40"x2="50"y2="80"/><polyline points="60,40 75,80 90,40"/><polyline points="130,60 115,80 100,60 115,40 140,80"/><polyline points="150,60 165,80 180,60 165,40 150,60 150,100 140,90 190,80"/><line x1="190"y1="80"x2="190"y2="10"/><polyline points="190,50 200,40 210,50 210,80"/><polyline points="250,60 235,80 220,60 235,40 260,80"/><line x1="270"y1="80"x2="270"y2="10"/><line x1="255"y1="30"x2="285"y2="30"/></svg>
+    <div class="navExtra"><button onclick="darkMode()"><svg id="darkModeMenu"height="6vh"viewBox="0 0 200 100"fill="none"><rect id="darkModeMenuBG"width="200"height="100"rx="45"/><circle id="darkModeSelector"cx="50"cy="50"r="40"fill="#0D99FF"/><g class="darkModeSun"><circle cx="50"cy="50"r="17.5"/><path d="M50 25 L55 34 H45 L50 25 Z"/><path d="M33 34 L41 36 L35 42 L33 34 Z"/><path d="M25 50 L34 45 L34 55 L25 50 Z"/><path d="M33 66 L35 58 L41 64 L33 66 Z"/><path d="M45 66 L54 67 L50 75 L45 66 Z"/><path d="M59 65 L65 59 L67 67 L59 65 Z"/><path d="M66 45 L75 50 L66 55 L66 45"/><path d="M59 36 L67 34 L65 42 L59 36 Z"/></g><path class="darkModeMoon"d="M172.5 57 C169 70 155 78 142 75 C128.5 71 147 76 153 52 C160 28 141 23 155 26 C168 30 176 43.5 172.5 57 Z"/></svg></button>
+      <div class="navLanguage"><a href="../">TH</a><a href="">EN</a></div>
+    </div>
+    <div class="navLink"><a href="">Home</a><a href="Biography.html">Biography</a><a href="MySkills.html">Skills</a><a href="About.html"id="navAbout">About</a></div>
+    <button class="navMenuIcon"onclick="openNav()"><div id="MenuIconBar1"></div><div id="MenuIconBar2"></div><div id="MenuIconBar3"></div></button>
+  </nav>
+
+  <header>
+    <h1 class="fadeInUp large">Welcome <span class="small sub">To</span><br>My Portfolio</h1>
+    <div class="big1"><p class="fadeInLeft noMargin big2"style="--order:2;">Academically Talented Program</p><p class="fadeInLeft noMargin"style="--order:3;">Bachelor of Engineering Program in</p><p class="fadeInLeft noMargin"style="--order:4;">Computer Engineering and Digital Technology (CEDT)</p><p class="fadeInLeft noMargin big2"style="--order:5;">Chulalongkorn University</p></div>
+  </header>
+
+  <main>
+    <section><h2 class="center">Introduction</h2>
+      <p class="noMargin easyRead"><span class="tab"></span>Hello everyone. My name is Sivaphat Sawatdichai. Welcome and thank you for visiting my Portfolio Website. This website is made by myself from designing the layout, coding, testing and until its completion. If you would like to know more about this website you can visit this link. Finally I hope that you will have a great time and experiences on my website. If you have any questions you can contact me at cookieandcake1105@gmail.com. Finally this English translation is done by myself which doesn't use AI or Grammarly, but I partly used Google Translate and Auto Correction in Google Docs.</p>
+    </section>
+
+    <section><h2 class="center">Who am I ?</h2>
+      <div class="flex personalInfo">
+        <img src="../Images/MySelf.jpeg" draggable="false"style="max-height:50vh;border-radius:10px;">
+        <table class="textContainer"><tbody>
+          <tr><td>Firstname</td><td>Sivaphat</td></tr>
+          <tr><td>Lastname</td><td>Sawatdichai</td></tr>
+          <tr><td>Nickname</td><td>Namo</td></tr>
+          <tr><td>Age</td><td>18 years</td></tr>
+          <tr><td>Date of Birth</td><td>28/07/2005</td></tr>
+          <tr><td>Religion</td><td>Christian</td></tr>
+          <tr><td>Nationallity</td><td>Thai</td></tr>
+        </tbody></table>
+      </div>
+    </section>
+
+    <section><h2 class="center">Education Background</h2>
+      <div class="flex">
+        <img src="../Images/SCA_logo.png"draggable="false"/>
+        <div class="textContainer">
+          <p>Sammuk Christian Academy<br><span class="tab small1">Middle School</span></p>
+          <p>Sciences and Mathematics Program<br>GPAX: 3.81</p>
+        </div>
+      </div>
+      <div class="linebreak"></div>
+      <div class="flex">
+        <img src="../Images/SCA_logo.png"draggable="false"/>
+        <div class="textContainer">
+          <p>Sammuk Christian Academy<br><span class="tab small1">High School</span></p>
+          <p>Sciences and Mathematics Program<br>GPAX 5: 3.80</p>
+        </div>
+        
+      </div>
+    </section>
+
+    <section><h2 class="center">Why CEDT ??</h2>
+      <p class="easyRead"><span class="tab"></span>I have used various technologies in my everyday life  which makes me think of developing a technology that will help my society as well.<br><span class="tab"></span>When I&rsquo;m in high school, I saw various problems in my life, my school and my country. Some of those problems could be solved by using technology. For example, reducing cost for business and improving people&rsquo;s quality of life.<br><span class="tab"></span>From the ever-increasing role of technology and my passion in this field. I have decided that I will enroll in the Bachelor of Engineering Program in Computer Engineering and Digital Technology, Chulalongkorn University because the curriculum is interesting, up to date and has an internship in summer too.<br><span class="tab"></span>When I have enrolled into the program I will keep improving myself and my capstone project will be about IoT which is linked to the web application to improve people&rsquo;s quality of life. When I have finished the program I will work in the system design/analysis field and I will help my country as much as I can.</p>
+    </section>
+
+    <section><h2 class="center">My Certificate</h2>
+      <p>Still in translation process</p>
+      <!-- <div class="slideContainer">
+        <button class="prevSlide"onclick="ShowSlide(-1)">&#10094;</button>
+        <button class="nextSlide"onclick="ShowSlide(1)">&#10095;</button>
+        <div class="slide flex">
+          <img src="../Certificates/RSU_Rookie_Game_Dev.jpeg"/>
+          <div class="slideDescription textContainer">
+            <p class="bold">Rookie Game Dev 2022</p>
+            <p>การอบรมออนไลน์ การพัฒนาเกมเบื้องต้นด้วย Unity<br>จัดโดย สาขาคอมพิวเตอร์เกมและอีสปอร์ต มหาวิทยาลัยรังสิต<br>ในช่วงวันที่ 9 กรกฎาคม - 6 สิงหาคม 2565</p>
+          </div>
+        </div>
+        <div class="slide flex">
+          <img src="../Certificates/Gamer_to_Coder.jpg"/>
+          <div class="slideDescription textContainer">
+            <p class="bold">Gamer to Coder 2022</p>
+            <p>การอบรมออนไลน์ การออกแบบและพัฒนาเว็บไซต์<br>จัดโดย กระทรวงศึกษาธิการ และ การีนา ออนไลน์ (ประเทศไทย)<br>ในช่วงเดือนตุลาคม พ.ศ. 2565 เป็นเวลารวมทั้งหมด 10 วัน วันละ 2 ชม.</p>
+          </div>
+        </div>
+    
+        <div class="slide flex">
+          <img src="../Certificates/Bangmod_Hackathon.png"/>
+          <div class="slideDescription textContainer">
+            <p class="bold">Bangmod Hackathon 2023</p>
+            <p>การแข่งขันแก้ไขปัญหาด้วยการเขียนโปรแกรมคอมพิวเตอร์<br>จัดโดย คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี<br>ในวันที่ 24 ธันวาคม พ.ศ. 2565</p>
+          </div>
+        </div>
+        <div class="slide flex">
+          <img src="../Certificates/Introduction_to_IoT.jpg">
+          <div class="slideDescription textContainer">
+            <p class="bold">Introduction to Internet of Things</p>
+            <p>คอร์สเรียน บทนำสู่อินเทอร์เน็ตแห่งสรรพสิ่ง<br>โดย Cisco Networking Academy<br>ในวันที่ 26 กันยายน พ.ศ. 2566</p>
+          </div>
+        </div>
+        <div class="slide flex">
+          <img src="../Certificates/Prototyping_Application.jpg">
+          <div class="slideDescription textContainer">
+            <p class="bold">Prototyping Applications</p>
+            <p>คอร์สเรียน การสร้างต้นแบบแอปพลิเคชันด้วย Figma<br>โดย Chula MOOC<br>ในวันที่ 29 กันยายน พ.ศ. 2566</p>
+          </div>
+        </div>
+      </div> -->
+    </section>
+  </main>
+
+  <footer class="center" id="footer">
+    <div class="navLink"><a href="">Home</a><a href="Biography.html">Biography</a><a href="MySkills.html">Skills</a>
+    <div class="navLanguage"><a href="">EN</a><a href="../">TH</a></div></div>
+    <p class="noMargin">This website is best viewed on PC<br>with the latest Google Chrome version.<br><a href="About.html">About this website</a></p>
+    <p class="textContainer noMargin">This website is made by Sivaphat Sawatdichai<br>If you have any recommendations you can contact me at<br><a href="mailto:cookieandcake1105@gmail.com">Email: cookieandcake1105@gmail.com</a></p>
+  </footer>
+</body>
+
+<script defer src="../Components/NavBar.js"></script>
+
+<script>
+  let slides = document.getElementsByClassName('slide');
+  let currentIndex = 0;
+  ShowSlide(currentIndex);
+  function ShowSlide(n) {
+      slides[currentIndex].classList.remove('showSlide');
+      if (currentIndex + n >= slides.length) {
+        currentIndex = 0;
+      }else if(currentIndex + n < 0){
+        currentIndex = slides.length - 1;
+      }else {
+        currentIndex += n;
+      }
+      slides[currentIndex].classList.add('showSlide');
+    }
+</script>
+</html>
