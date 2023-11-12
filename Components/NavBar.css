@@ -3,7 +3,7 @@
   --navBgColor: #DD78A6;
   --navTextColor : white;
 }
-.darkMode {
+:root[data-theme="dark"]{
   --bgColor : black;
   --textColor : #F1F1F1;
   --navBgColor: #DB5F8E;
@@ -14,12 +14,10 @@ nav a , footer a{
   text-decoration: none;
   text-align: center;
   font-family: sans-serif, Arial, Helvetica;
-  font-size: 1.2em;
+  font-size: 2em;
   padding: 0px 0.5em;
 }
-.navLanguage a {
-  font-size: 0.8em;
-}
+
 
 /* TopNavigation */
 nav.topNavShrink {top: -8vh;}
@@ -55,18 +53,14 @@ nav.navOpened {
   display: none;
 }
 .navOpened .navLink a {float:none;display:block;padding: 2vh 0;}
-.navOpened #navContact {display: none;}
-.navExtra {
-  height: 8vh;
-  float: right;
-}
-.navOpened .navExtra {display: block; float: none;}
+.navOpened .navExtra {display:block;padding-left:2.5vw;padding-right:2.5vw;}
 
 nav .navLanguage , nav .navLanguage a {
   float: right;
 }
 
 button {
+  color:var(--TextColor);
   cursor: pointer;
   padding: 0;
   border: 0;
@@ -79,15 +73,15 @@ nav button:focus,nav button:visited,nav button:active{
 #darkModeMenu {padding: 1vh 0.5em;}
 #darkModeMenuBG {fill: var(--bgColor)}
 #darkModeMenuBG,#darkModeSelector {transition: 0.3s;}
-.darkMode #darkModeSelector {transform: translateX(50%);}
+[data-theme="dark"] #darkModeSelector{transform: translateX(50%);}
 .darkModeSun {fill: white; transition: 0.3s;}
 .darkModeMoon {fill: black;}
-.darkMode .darkModeMoon {fill: white;}
+[data-theme="dark"] .darkModeMoon {fill: white;}
 
 
 .navMenuIcon {
   position: absolute;
-  width: 5.33vh;
+  width: 5vh;
   height: 4vh;
   top: 2vh;
   right: 2.5vw;
@@ -114,12 +108,15 @@ nav button:focus,nav button:visited,nav button:active{
     font-size: 0.9em;
   }
   #topNav .navLink a {float: left;}
-  #topNav #navContact {float: right;}
+  #topNav #navAbout {float: right;}
+  .navExtra {
+    height: 8vh;
+  }
   #topNav .navExtra{display: block; float: right;}
   #topNav .navExtra , #topNav .navLink a {padding: 0 0.5em;}
 
-  .darkMode .darkModeSun {fill: black;} 
-  .darkMode #darkModeMenu:hover .darkModeSun {fill: white;}
+  [data-theme="dark"] .darkModeSun {fill: black;} 
+  [data-theme="dark"] #darkModeMenu:hover .darkModeSun {fill: white;}
   
   .navMenuIcon {display: none;}
 }
@@ -128,7 +125,7 @@ nav button:focus,nav button:visited,nav button:active{
 footer {
   margin-top: 20vh;
   color: var(--TextColor);
-  font-size: 0.8em;
+  font-size: 0.9em;
 }
 footer div {padding: 1em 2.5%;}
 footer .navLanguage a , footer .navLink a{font-size: 0.9em;}
