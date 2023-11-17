@@ -43,7 +43,7 @@ a {color: blue;}
 
 
 .noMargin{margin:0;margin-block:0;margin-inline:0;}
-.easyRead{margin:0 auto;max-width:75vw;line-height:1.75em;text-align:justify;}
+.easyRead{margin:0 auto;max-width:80vw;line-height:1.75em;text-align:justify;}
 .linebreak {padding: 2.5vh 0;}
 
 .bold{font-weight:bold;}
@@ -111,7 +111,7 @@ a {color: blue;}
 @media only screen and (min-width:768px) {
   body{font-size: clamp(1.5vh,3vw,3vh);}
   main{padding:0vh 5vw;}
-  .easyRead{max-width: 60vw;}
+  .easyRead{max-width: 65vw;}
   .slide {flex-wrap: nowrap;}
   .slide img {width: 33vw;}
 }
